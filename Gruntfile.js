@@ -44,6 +44,12 @@ module.exports = function (grunt) {
         },
         clean: {
             build: ['build']
+        },
+        'gh-pages': {
+            options: {
+                base: 'build'
+            },
+            src: '*'
         }
     });
 
@@ -53,4 +59,5 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'sass', 'nunjuckr']);
+    grunt.registerTask('deploy', ['default', 'gh-pages']);
 };
