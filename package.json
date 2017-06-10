@@ -1,0 +1,20 @@
+{
+  "name": "startpage",
+  "version": "1.0.0",
+  "description": "Startpage by Tryton Van Meer",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nunjuckr": "^1.5.1",
+    "load-grunt-tasks": "^3.5.2",
+    "nunjucks": "^3.0.1",
+    "time-grunt": "^1.4.0"
+  },
+  "scripts": {},
+  "author": "tryton-vanmeer",
+  "license": "MIT"
+}
