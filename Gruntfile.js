@@ -43,7 +43,7 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            build: ['build']
+            build: ['build', '.grunt', '.sass-cache']
         },
         'gh-pages': {
             options: {
