@@ -1,6 +1,6 @@
 # Startpage
 
-Custom startpage build with Bootstrap
+Custom startpage built with Bootstrap
 
 ### Build Instructions
 + `npm install`
