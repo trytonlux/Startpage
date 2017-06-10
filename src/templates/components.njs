@@ -8,3 +8,11 @@
     </div>
 </div>
 {% endmacro %}
+
+{% macro fa(name) %}
+<i class="fa fa-{{ name }}"></i>
+{% endmacro %}
+
+{% macro fa_5x(name) %}
+<i class="fa fa-{{ name }} fa-5x"></i>
+{% endmacro %}
