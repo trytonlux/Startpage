@@ -10,10 +10,15 @@ module.exports = function (grunt) {
                 dest: 'build/script.min.js'
             }
         },
-        cssmin: {
-            target: {
+        sass: {
+            build: {
+                options: {
+                    'loadPath': 'src/sass',
+                    'style': 'compressed',
+                    'sourcemap': 'none'
+                },
                 files: {
-                    'build/style.min.css': ['src/<%= pkg.name %>.css']
+                    'build/style.min.css': 'src/sass/main.scss'
                 }
             }
         },
@@ -47,5 +52,5 @@ module.exports = function (grunt) {
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'cssmin', 'nunjuckr']);
+    grunt.registerTask('default', ['uglify', 'sass', 'nunjuckr']);
 };
