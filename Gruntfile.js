@@ -26,7 +26,6 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     searchPaths: 'src/templates'
-                    // data: grunt.file.readJSON('data/data.json')
                 },
                 files: [
                     {
