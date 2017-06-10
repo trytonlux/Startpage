@@ -44,5 +44,13 @@ body
     {
         padding-right: 50px;
         text-decoration: none;
+        i
+        {
+            transition: all 1 ease;
+            &:hover
+            {
+                transform: translateY(-3px);
+            }
+        }
     }
 }
