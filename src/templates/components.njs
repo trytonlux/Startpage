@@ -1,10 +1,10 @@
-{% macro panel(title, body='') %}
+{% macro panel(title) %}
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3 class="panel-title">{{ title }}</h3>
     </div>
     <div class="panel-body">
-        {{ body | safe }}
+        {{ caller() }}
     </div>
 </div>
 {% endmacro %}
@@ -18,5 +18,5 @@
 {% endmacro %}
 
 {% macro website_link(name, url, icon) %}
-<a href="{{ url }}" title="{{ name }}">{{ fa_5x(icon) }}</a>
+<a class="icon-link" href="{{ url }}" title="{{ name }}">{{ fa_5x(icon) }}</a>
 {% endmacro %}
