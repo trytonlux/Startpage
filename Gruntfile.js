@@ -25,7 +25,8 @@ module.exports = function (grunt) {
         nunjuckr: {
             build: {
                 options: {
-                    searchPaths: 'src/templates'
+                    searchPaths: 'src/templates',
+                    data: grunt.file.readJSON('data/conf.json')
                 },
                 files: [
                     {
