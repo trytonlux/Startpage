@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Startpage by tryton-vanmeer">
         <meta name="author" content="tryton-vanmeer">
-        <link rel="icon" href="../../favicon.ico">
 
         <title>Startpage</title>
 
