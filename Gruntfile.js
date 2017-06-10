@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         sass: {
             build: {
                 options: {
-                    'loadPath': 'src/sass',
+                    'loadPath': ['src/sass', 'node_modules'],
                     'style': 'compressed',
                     'sourcemap': 'none'
                 },
