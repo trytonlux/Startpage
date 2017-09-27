@@ -22,6 +22,12 @@ module.exports = function (grunt) {
                 }
             }
         },
+        copy: {
+            index: {
+                src: 'src/index.html',
+                dest: 'build/index.html'
+            }
+        },
         watch: {
             src: {
                 files: ['src/**/*'],
@@ -44,6 +50,6 @@ module.exports = function (grunt) {
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'sass']);
+    grunt.registerTask('default', ['uglify', 'sass', 'copy']);
     grunt.registerTask('deploy', ['default', 'gh-pages']);
 };
