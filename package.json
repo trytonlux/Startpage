@@ -9,7 +9,7 @@
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-gh-pages": "^2.0.0",
-    "grunt-sass": "^1.0.0",
+    "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
     "normalize-scss": "^7.0.0",
     "time-grunt": "^1.4.0"
