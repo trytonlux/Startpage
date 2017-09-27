@@ -6,34 +6,20 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             build: {
-                src: 'src/<%= pkg.name %>.js',
-                dest: 'build/script.min.js'
+                src: 'src/js/*',
+                dest: 'build/script.js'
             }
         },
         sass: {
             build: {
                 options: {
-                    'loadPath': ['src/sass', 'node_modules'],
+                    'includePaths': ['src/sass', 'node_modules'],
                     'style': 'compressed',
                     'sourcemap': 'none'
                 },
                 files: {
-                    'build/style.min.css': 'src/sass/main.scss'
+                    'build/style.css': 'src/sass/main.scss'
                 }
-            }
-        },
-        nunjuckr: {
-            build: {
-                options: {
-                    searchPaths: 'src/templates',
-                    data: grunt.file.readJSON('data/conf.json')
-                },
-                files: [
-                    {
-                        src: 'src/templates/<%= pkg.name %>.njs',
-                        dest: 'build/index.html'
-                    }
-                ]
             }
         },
         watch: {
@@ -58,6 +44,6 @@ module.exports = function (grunt) {
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'sass', 'nunjuckr']);
+    grunt.registerTask('default', ['uglify', 'sass']);
     grunt.registerTask('deploy', ['default', 'gh-pages']);
 };
