@@ -25,17 +25,32 @@ main
 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    position: relative;
     background-color: $base02;
     color: $textColor;
+    font-size: 0.7em;
+    font-weight: bold;
     width: 100%;
     height: 24px;
     z-index: 15;
 
     #time
     {
-        font-size: 0.7em;
-        font-weight: bold;
+        flex: 0 1 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #appname
+    {
+        flex: 0 1 auto;
+        margin-left: 5px;
+        &::before
+        {
+            content: "Terminal";
+        }
     }
 }
 
@@ -101,12 +116,31 @@ main
 
             -webkit-animation: 1s blink step-end infinite;
             -moz-animation: 1s blink step-end infinite;
-            -ms-animation: 1s blink step-end infinite;
-            -o-animation: 1s blink step-end infinite;
             animation: 1s blink step-end infinite;
         }
 
-        @keyframes "blink" {
+        @-webkit-keyframes "blink"
+        {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: $textColor;
+          }
+        }
+
+        @-moz-keyframes "blink"
+        {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: $textColor;
+          }
+        }
+
+        @keyframes "blink"
+        {
           from, to {
             color: transparent;
           }
