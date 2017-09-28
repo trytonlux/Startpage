@@ -6,9 +6,39 @@
 
         <link rel="stylesheet" href="style.css">
     </head>
+
+    <nav class="top-bar">
+        <span id="time"></span>
+    </nav>
+
     <body>
-        <h1>HELLO WORLD</h1>
-        <h3 id="time"></h3>
+
+        <main>
+            <div class="terminal">
+                <div class="terminal-title-bar">
+                    <span id="terminal-close-button"></span>
+                </div>
+
+                <span class="prompt">ls Links/</span>
+                <ul id="prompt-links">
+                    <a href="https://reddit.com/">Reddit</a>
+                    <a href="https://github.com/">GitHub</a>
+                    <a href="https://youtube.com/">YouTube</a>
+                    <a href="https://store.steampowered.com/">Steam</a>
+                    <a href="https://inbox.google.com/">Inbox</a>
+                </ul>
+
+                <div id="prompt-search-help">
+                    <span class="prompt">ddg --help</span>
+                    <span><br>Usage: ddg [QUERY]<br>Search duckduckgo in new tab</span>
+                </div>
+
+                <span class="prompt">
+                    <span id="prompt-search" contenteditable="true" spellcheck="false"></span>
+                    <span class="blinking-cursor"></span>
+                </span>
+            </div>
+        </main>
 
         <script src="script.js" charset="utf-8"></script>
     </body>

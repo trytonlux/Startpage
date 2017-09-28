@@ -1,21 +1,33 @@
-/**
-    Javascript for Startpage
-**/
-
-
-/**
-    Onload
-**/
-window.onload = load;
-function load()
+window.onload = function()
 {
-    //Run modules
     clock();
-}
 
-/**
-    Modules
-**/
+    document.getElementById("prompt-search").onkeypress = function(e)
+    {
+        if (e.which === 13)
+        {
+            var input = document.getElementById("prompt-search").textContent;
+
+            if (input === "--help")
+            {
+                document.getElementById("prompt-search-help").style.display = "inherit";
+            }
+            else
+            {
+                search(input);
+            }
+
+            document.getElementById("prompt-search").textContent = "";
+            return false;
+        }
+    };
+
+    document.getElementById("terminal-close-button").onclick = function(e)
+    {
+        document.getElementById("prompt-search-help").style.display = "none";
+    };
+};
+
 function search(input)
 {
     // Ignore empty input
@@ -39,7 +51,7 @@ function clock()
     10 > minute && (minute = "0" + minute);
 
     // Set time element
-    $("#time").html(hour + ":" + minute + " " + period);
+    document.getElementById("time").textContent = hour + ":" + minute + " " + period;
 
     setTimeout("clock()", 1000);
 }

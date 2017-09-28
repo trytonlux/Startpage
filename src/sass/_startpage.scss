@@ -1,6 +1,140 @@
-*
+html
 {
-    -webkit-border-radius: 0 !important;
-       -moz-border-radius: 0 !important;
-            border-radius: 0 !important;
+    font: monospace;
+    font-size: 1.5em;
+    height: 100%;
+    overflow: hidden;
+}
+
+body
+{
+    margin: 0;
+    height: 100%;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: url($wall) center;
+}
+
+.top-bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $base02;
+    color: $textColor;
+    width: 100%;
+    height: 24px;
+    z-index: 15;
+
+    #time
+    {
+        font-size: 0.7em;
+        font-weight: bold;
+    }
+}
+
+.terminal
+{
+    background-color: $terminalBG;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.7);
+    color: $textColor;
+    width: 725px;
+    height: 425px + 25px;
+    z-index: 15;
+
+    .terminal-title-bar
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: $terminalTitleBG;
+        width: 100%;
+        height: 25px;
+        z-index: 20;
+
+        #terminal-close-button
+        {
+            &::before
+            {
+                content: "●";
+            }
+            &:hover
+            {
+                color: lighten($base08, 10);
+            }
+            color: $base08;
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+    }
+
+    .prompt
+    {
+        &::before
+        {
+            content: "┌ ~ \a └>$ ";
+            white-space: pre;
+        }
+
+        #prompt-search
+        {
+            &::before
+            {
+                content: "ddg ";
+            }
+            outline: none;
+            caret-color: #FFFFFF00;
+        }
+
+        .blinking-cursor
+        {
+            &::before
+            {
+                content: "█";
+            }
+
+            -webkit-animation: 1s blink step-end infinite;
+            -moz-animation: 1s blink step-end infinite;
+            -ms-animation: 1s blink step-end infinite;
+            -o-animation: 1s blink step-end infinite;
+            animation: 1s blink step-end infinite;
+        }
+
+        @keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: $textColor;
+          }
+        }
+    }
+
+    #prompt-search-help
+    {
+        display: none;
+    }
+
+    #prompt-links
+    {
+        a,
+        a:visited
+        {
+            text-decoration: none;
+            color: $base0D;
+            padding-right: 20px;
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+        margin: 0;
+        padding: 0;
+    }
 }
