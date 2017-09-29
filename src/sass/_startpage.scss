@@ -1,3 +1,13 @@
+*
+{
+    a,
+    a:visited
+    {
+        text-decoration: none;
+        color: $textColor;
+    }
+}
+
 html
 {
     font: monospace;
@@ -50,6 +60,28 @@ main
         &::before
         {
             content: "Terminal";
+        }
+    }
+    #status-icons
+    {
+        height: 100%;
+        margin-left: auto;
+
+        span
+        {
+            height: 100%;
+            display: none;
+            &:hover
+            {
+                background-color: $base01;
+            }
+        }
+
+        .status-icon-text
+        {
+            display: inline;
+            line-height: 24px;
+            float: right;
         }
     }
 }
@@ -160,7 +192,6 @@ main
         a,
         a:visited
         {
-            text-decoration: none;
             color: $base0D;
             padding-right: 20px;
         }

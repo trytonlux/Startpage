@@ -1,9 +1,12 @@
 window.onload = function()
 {
     clock();
+    github();
 
+    // Set event handlers
     document.getElementById("prompt-search").onkeypress = function(e)
     {
+        // On enter keypress
         if (e.which === 13)
         {
             var input = document.getElementById("prompt-search").textContent;
