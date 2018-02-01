@@ -4,7 +4,7 @@ Custom Startpage
 
 ### Build Instructions
 + `npm install`
-+ `grunt build`
++ `grunt`
 + Static files are now in build
 
 ### Testing
