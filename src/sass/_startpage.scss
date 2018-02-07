@@ -69,6 +69,7 @@ main
     #status-icons
     {
         height: 100%;
+        margin-right: 8px;
         margin-left: auto;
 
         svg
@@ -83,7 +84,6 @@ main
 
         span
         {
-            display: inherit !important;
             height: 100%;
             display: none;
         }
