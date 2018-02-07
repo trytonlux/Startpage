@@ -4,7 +4,6 @@
     a:visited
     {
         text-decoration: none;
-        color: $textColor;
     }
 }
 
@@ -37,13 +36,18 @@ main
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    background-color: $base02;
-    color: $textColor;
+    background-color: $base00;
+    color: $base07;
     font-size: 0.7em;
     font-weight: bold;
     width: 100%;
     height: 24px;
     z-index: 15;
+
+    span:hover, svg:hover
+    {
+        color: $textColor;
+    }
 
     #time
     {
@@ -67,14 +71,21 @@ main
         height: 100%;
         margin-left: auto;
 
-        span
+        svg
         {
-            height: 100%;
-            display: none;
+            fill: $base07;
+
             &:hover
             {
-                background-color: $base01;
+                fill: $textColor;
             }
+        }
+
+        span
+        {
+            display: inherit !important;
+            height: 100%;
+            display: none;
         }
 
         .status-icon-text
@@ -88,8 +99,8 @@ main
 
 .terminal
 {
-    background-color: $terminalBG;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(29, 31, 33, .7);
+    box-shadow:0 1px 0 rgba(0,0,0,0.3);
     color: $textColor;
     width: 725px;
     height: 425px + 25px;
@@ -113,9 +124,9 @@ main
             }
             &:hover
             {
-                color: lighten($base08, 10);
+                color: lighten($base01, 10);
             }
-            color: $base08;
+            color: $base01;
             margin-right: 5px;
             font-size: 1.2em;
         }
@@ -127,16 +138,6 @@ main
         {
             content: "┌ ~ \a └>$ ";
             white-space: pre;
-        }
-
-        #prompt-search
-        {
-            &::before
-            {
-                content: "ddg ";
-            }
-            outline: none;
-            caret-color: #FFFFFF00;
         }
 
         .blinking-cursor
@@ -182,17 +183,12 @@ main
         }
     }
 
-    #prompt-search-help
-    {
-        display: none;
-    }
-
     #prompt-links
     {
         a,
         a:visited
         {
-            color: $base0D;
+            color: $base04;
             margin-right: 20px;
             outline: none;
         }
