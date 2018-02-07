@@ -2,43 +2,7 @@ window.onload = function()
 {
     clock();
     github();
-
-    // Set event handlers
-    document.getElementById("prompt-search").onkeypress = function(e)
-    {
-        // On enter keypress
-        if (e.which === 13)
-        {
-            var input = document.getElementById("prompt-search").textContent;
-
-            if (input === "--help")
-            {
-                document.getElementById("prompt-search-help").style.display = "inherit";
-            }
-            else
-            {
-                search(input);
-            }
-
-            document.getElementById("prompt-search").textContent = "";
-            return false;
-        }
-    };
-
-    document.getElementById("terminal-close-button").onclick = function(e)
-    {
-        document.getElementById("prompt-search-help").style.display = "none";
-    };
 };
-
-function search(input)
-{
-    // Ignore empty input
-    if (input != "")
-    {
-        window.open("https://duckduckgo.com/?q=" + input, '_blank');
-    }
-}
 
 function clock()
 {
