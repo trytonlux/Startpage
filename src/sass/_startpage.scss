@@ -149,29 +149,7 @@ main
                 content: "█";
             }
 
-            -webkit-animation: 1s blink step-end infinite;
-            -moz-animation: 1s blink step-end infinite;
             animation: 1s blink step-end infinite;
-        }
-
-        @-webkit-keyframes "blink"
-        {
-          from, to {
-            color: transparent;
-          }
-          50% {
-            color: $textColor;
-          }
-        }
-
-        @-moz-keyframes "blink"
-        {
-          from, to {
-            color: transparent;
-          }
-          50% {
-            color: $textColor;
-          }
         }
 
         @keyframes "blink"
@@ -200,5 +178,45 @@ main
         }
         margin: 0 0 0 8px;
         padding: 0;
+    }
+
+    #prompt-input
+    {
+        &::before
+        {
+            content: "┌ ~ \a └>$ ";
+            white-space: pre;
+        }
+
+        animation: 1s blinking-cursor step-end infinite;
+        border-right: 13px solid $textColor;
+        caret-color: transparent;
+        outline: none;
+
+        &.disabled
+        {
+            animation: none;
+            border-right: none;
+        }
+
+        @keyframes "blinking-cursor"
+        {
+          from, to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: $textColor;
+          }
+        }
+    }
+
+    #fortune
+    {
+        display: none;
+
+        #prompt-fortune
+        {
+            white-space: pre-wrap;
+        }
     }
 }
