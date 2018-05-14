@@ -7,72 +7,6 @@
   --main-text-color: #FFFFFF;
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 0.84156;
-  }
-  5% {
-    opacity: 0.42186;
-  }
-  10% {
-    opacity: 0.55508;
-  }
-  15% {
-    opacity: 0.09443;
-  }
-  20% {
-    opacity: 0.51622;
-  }
-  25% {
-    opacity: 0.05793;
-  }
-  30% {
-    opacity: 0.9323;
-  }
-  35% {
-    opacity: 0.20611;
-  }
-  40% {
-    opacity: 0.04369;
-  }
-  45% {
-    opacity: 0.042;
-  }
-  50% {
-    opacity: 0.39433;
-  }
-  55% {
-    opacity: 0.39385;
-  }
-  60% {
-    opacity: 0.7471;
-  }
-  65% {
-    opacity: 0.40729;
-  }
-  70% {
-    opacity: 0.20406;
-  }
-  75% {
-    opacity: 0.53694;
-  }
-  80% {
-    opacity: 0.7673;
-  }
-  85% {
-    opacity: 0.81633;
-  }
-  90% {
-    opacity: 0.29995;
-  }
-  95% {
-    opacity: 0.27442;
-  }
-  100% {
-    opacity: 0.13509;
-  }
-}
-
 body {
     font-family: monospace;
     background: var(--main-bg-color);
@@ -200,4 +134,70 @@ body img {
 /* ##4C5263 */
 .icon-solus {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg") no-repeat center;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.84156;
+  }
+  5% {
+    opacity: 0.42186;
+  }
+  10% {
+    opacity: 0.55508;
+  }
+  15% {
+    opacity: 0.09443;
+  }
+  20% {
+    opacity: 0.51622;
+  }
+  25% {
+    opacity: 0.05793;
+  }
+  30% {
+    opacity: 0.9323;
+  }
+  35% {
+    opacity: 0.20611;
+  }
+  40% {
+    opacity: 0.04369;
+  }
+  45% {
+    opacity: 0.042;
+  }
+  50% {
+    opacity: 0.39433;
+  }
+  55% {
+    opacity: 0.39385;
+  }
+  60% {
+    opacity: 0.7471;
+  }
+  65% {
+    opacity: 0.40729;
+  }
+  70% {
+    opacity: 0.20406;
+  }
+  75% {
+    opacity: 0.53694;
+  }
+  80% {
+    opacity: 0.7673;
+  }
+  85% {
+    opacity: 0.81633;
+  }
+  90% {
+    opacity: 0.29995;
+  }
+  95% {
+    opacity: 0.27442;
+  }
+  100% {
+    opacity: 0.13509;
+  }
 }
