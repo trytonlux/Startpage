@@ -1,0 +1,203 @@
+/*
+    Stylesheet for Startpage <tryton-vanmeer>
+*/
+
+:root {
+  --main-bg-color: #303030;
+  --main-text-color: #FFFFFF;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.84156;
+  }
+  5% {
+    opacity: 0.42186;
+  }
+  10% {
+    opacity: 0.55508;
+  }
+  15% {
+    opacity: 0.09443;
+  }
+  20% {
+    opacity: 0.51622;
+  }
+  25% {
+    opacity: 0.05793;
+  }
+  30% {
+    opacity: 0.9323;
+  }
+  35% {
+    opacity: 0.20611;
+  }
+  40% {
+    opacity: 0.04369;
+  }
+  45% {
+    opacity: 0.042;
+  }
+  50% {
+    opacity: 0.39433;
+  }
+  55% {
+    opacity: 0.39385;
+  }
+  60% {
+    opacity: 0.7471;
+  }
+  65% {
+    opacity: 0.40729;
+  }
+  70% {
+    opacity: 0.20406;
+  }
+  75% {
+    opacity: 0.53694;
+  }
+  80% {
+    opacity: 0.7673;
+  }
+  85% {
+    opacity: 0.81633;
+  }
+  90% {
+    opacity: 0.29995;
+  }
+  95% {
+    opacity: 0.27442;
+  }
+  100% {
+    opacity: 0.13509;
+  }
+}
+
+body {
+    font-family: monospace;
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+/* flicker */
+body::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(48, 48, 48, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+}
+
+/* scanlines */
+body::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: linear-gradient(rgba(48, 48, 48, 0) 50%, rgba(22, 22, 22, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)); */
+    background: linear-gradient(rgba(48, 48, 48, 0) 50%, rgba(22, 22, 22, 0.25) 50%), linear-gradient(90deg, rgba(244, 135, 138, 0.06), rgba(205, 233, 162, 0.02), rgba(152, 227, 254, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+body h1 {
+    text-align: center;
+    color: #CDE9A2;
+}
+
+body img {
+    height: 128px;
+    width: 128px;
+}
+
+* a,
+* a:visited {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+#icon-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    padding-top: 32px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 128px;
+    height: 128px;
+}
+
+.icon-link:hover {
+    outline: var(--main-text-color) solid 2px;
+}
+
+.icon-link span {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--main-text-color);
+}
+
+/* #181717 */
+.icon-github {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg") no-repeat center;
+}
+
+/* #000000 */
+.icon-steam {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/steam.svg") no-repeat center;
+}
+
+/* #FF0000 */
+.icon-youtube {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtube.svg") no-repeat center;
+}
+
+/* #0C9D58 */
+.icon-hangouts {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlehangouts.svg") no-repeat center;
+}
+
+/* #4285F4 */
+.icon-inbox {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg") no-repeat center;
+}
+
+/* #FF4500 */
+.icon-reddit {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reddit.svg") no-repeat center;
+}
+
+/* #282c37 */
+.icon-mastodon {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg") no-repeat center;
+}
+
+/* ##4C5263 */
+.icon-solus {
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg") no-repeat center;
+}
