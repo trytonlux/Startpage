@@ -4,7 +4,7 @@
 
 :root {
   --main-bg-color: #303030;
-  --main-text-color: #FFFFFF;
+  --main-text-color: #CDE9A2;
 }
 
 body {
@@ -50,7 +50,7 @@ body::before {
     width: 750px;
     margin-top: 128px;
     margin-bottom: 128px;
-    color: #CDE9A2;
+    color: var(--main-text-color);
 }
 
 body img {
