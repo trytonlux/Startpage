@@ -96,42 +96,35 @@ body img {
     background-color: var(--main-text-color);
 }
 
-/* #181717 */
 .icon-github {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg") no-repeat center;
 }
 
-/* #000000 */
 .icon-steam {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/steam.svg") no-repeat center;
 }
 
-/* #FF0000 */
 .icon-youtube {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtube.svg") no-repeat center;
 }
 
-/* #0C9D58 */
 .icon-hangouts {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlehangouts.svg") no-repeat center;
 }
 
-/* #4285F4 */
 .icon-inbox {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg") no-repeat center;
 }
 
-/* #FF4500 */
 .icon-reddit {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reddit.svg") no-repeat center;
 }
 
-/* #282c37 */
 .icon-mastodon {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg") no-repeat center;
 }
 
-/* ##4C5263 */
+
 .icon-solus {
     mask: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg") no-repeat center;
 }
