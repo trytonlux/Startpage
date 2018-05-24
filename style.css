@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: VT220, monospace;
     background: var(--main-bg-color);
     color: var(--main-text-color);
 }
