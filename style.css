@@ -2,6 +2,15 @@
     Stylesheet for Startpage <tryton-vanmeer>
 */
 
+@font-face {
+    font-family: 'VT220';
+    src: url('fonts/vt220-mod-webfont.woff2') format('woff2'),
+         url('fonts/vt220-mod-webfont.woff') format('woff'),
+         url('fonts/vt220-mod-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
   --main-bg-color: #303030;
   --main-text-color: #CDE9A2;
@@ -85,8 +94,8 @@ body img {
 }
 
 .icon-link span {
-    font-size: 1.5em;
-    font-weight: bold;
+    /* font-size: 1.5em; */
+    font-size: 32px;
     margin-top: 8px;
 }
 
