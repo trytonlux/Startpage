@@ -54,14 +54,6 @@ body::before {
     pointer-events: none;
 }
 
-.title {
-    margin: auto;
-    width: 750px;
-    margin-top: 128px;
-    margin-bottom: 128px;
-    color: var(--main-text-color);
-}
-
 body img {
     height: 128px;
     width: 128px;
@@ -71,6 +63,14 @@ body img {
 * a:visited {
   text-decoration: none;
   color: var(--main-text-color);
+}
+
+#title {
+    margin: auto;
+    width: 750px;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    color: var(--main-text-color);
 }
 
 #icon-links {
