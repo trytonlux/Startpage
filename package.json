@@ -8,7 +8,10 @@
   "license": "MIT",
   "watch": {
     "build:html": "src/index.html",
-    "build:css": "src/sass/**"
+    "build:css": {
+        "patterns": ["src"],
+        "extensions": "scss"
+    }
   },
   "scripts": {
     "clean": "rm -rf build && mkdir build",
