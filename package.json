@@ -9,14 +9,18 @@
   "watch": {
     "build:html": "src/index.html",
     "build:css": {
-        "patterns": ["src"],
-        "extensions": "scss"
-    }
+      "patterns": [
+        "src"
+      ],
+      "extensions": "scss"
+    },
+    "build:js": "src/js"
   },
   "scripts": {
     "clean": "rm -rf build && mkdir build",
     "build:html": "cp src/index.html build/",
     "build:css": "node-sass src/sass/startpage.scss -q build/style.css",
+    "build:js": "browserify src/js/startpage.js -o build/bundle.js",
     "build": "npm-run-all --parallel build:*",
     "watch": "npm-watch",
     "serve": "cd build/ && live-server",
@@ -25,10 +29,12 @@
   },
   "devDependencies": {
     "live-server": "^1.2.0",
+    "mustache": "^3.0.0",
     "node-sass": "^4.9.4",
     "nord": "^0.2.1",
     "npm-run-all": "^4.1.3",
     "npm-watch": "^0.4.0",
-    "spectre.css": "^0.5.3"
+    "spectre.css": "^0.5.3",
+    "browserify": "^16.2.3"
   }
 }
