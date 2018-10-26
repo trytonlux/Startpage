@@ -16,7 +16,7 @@ function test() {
     cards.appendChild(div.firstChild);
 }
 
-set_background("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f11dd5509e0f6b4e253454f8583aff6c")
+set_background(config["background"])
 
 test();
 test();
