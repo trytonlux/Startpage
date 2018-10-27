@@ -28,6 +28,10 @@ main {
     padding-bottom: 32px;
 }
 
+.columns {
+    justify-content: center;
+}
+
 .card {
     margin-bottom: 16px;
     border-color: $nord8;

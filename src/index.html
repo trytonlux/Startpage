@@ -14,9 +14,7 @@
             <h1 id="heading">Startpage</h1>
 
             <div class="container">
-                <div id="card-columns" class="columns">
-
-                </div>
+                <div id="card-columns" class="columns"></div>
             </div>
         </main>
 
@@ -25,15 +23,13 @@
     <div class="column col-2 col-sm-12">
         <div class="card">
             <div class="card-header">
-                <div class="card-title h5">Group Name</div>
+                <div class="card-title h5">{{ name }}</div>
             </div>
             <div class="card-body">
                 <ul class="card-links">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    {{ #links }}
+                        <li><a href="{{ link-href }}">{{ link-display }}</a></li>
+                    {{ /links }}
                 </ul>
             </div>
         </div>
