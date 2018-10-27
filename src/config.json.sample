@@ -1,10 +1,9 @@
 config = {
     "background": "<background-url>",
-    "heading-color": "<heading-color>",
 
     "cards": [
         {
-            "name": "<group-name>",
+            "card-name": "<card-name>",
             "links": [
                 {"link-href": "#", "link-display": "Sample Link"}
             ]
