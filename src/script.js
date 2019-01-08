@@ -1,6 +1,6 @@
 "use strict";
 
-// Setup markup for links from config.json and append to body
+// Setup markup for links from config.json and set body innerHTML.
 const markup = `
 <div class="links">
     ${links.map(link => `
@@ -13,7 +13,7 @@ const markup = `
         `).join("")}
 </div>
 `;
-// div_links = document.createElement();
+
 document.body.innerHTML = markup;
 
 // Apply mask to icons from data-icon
