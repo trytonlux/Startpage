@@ -1,12 +1,3 @@
-config = {
-    "background": "<background-url>",
-
-    "cards": [
-        {
-            "card-name": "<card-name>",
-            "links": [
-                {"link-href": "#", "link-display": "Sample Link"}
-            ]
-        }
-    ]
+links = {
+    {name: "", href: "", icon: ""},
 }
