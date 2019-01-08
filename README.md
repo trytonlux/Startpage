@@ -2,7 +2,7 @@
 
 Custom startpage for displaying links.
 
-![screenshot](screenshot.jpg)
+![screenshot](screenshot.png)
 
 ### Config
 
