@@ -1,5 +1,5 @@
 /* -*- javascript -*- */
 
-links = {
+links = [
     {name: "", href: "", icon: ""},
-}
+]
