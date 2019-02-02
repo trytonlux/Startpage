@@ -6,7 +6,7 @@ const markup = `
     ${links.map(link => `
         <a class="link" href="${link.href}">
         <div class="link-inner">
-            <div class="link-icon" data-icon="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${link.icon}.svg"></div>
+            <span class="mdi mdi-${link.icon}"></span>
             ${link.name}
         </div>
         </a>
@@ -15,8 +15,3 @@ const markup = `
 `;
 
 document.body.innerHTML = markup;
-
-// Apply mask to icons from data-icon
-for (var icon of document.getElementsByClassName("link-icon")) {
-    icon.style.maskImage = `url(${icon.dataset.icon})`;
-}

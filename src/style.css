@@ -49,10 +49,6 @@ body {
     color: var(--color-pink);
 }
 
-.link:hover .link-icon {
-    background-color: var(--color-pink);
-}
-
 .link-inner {
     display: flex;
     flex-direction: column;
@@ -62,11 +58,7 @@ body {
     height: 100%;
 }
 
-.link-icon {
-    width: var(--size-icon);
-    height: var(--size-icon);
-    background-color: var(--color-foreground);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    margin-bottom: 1.5rem;
+.link-inner span {
+    font-size: 3em;
+    margin-bottom: 1rem;
 }
