@@ -1,5 +1,7 @@
 "use strict";
 
+const links_outer = document.getElementById("links-outer");
+
 // Setup markup for links from config.json and set body innerHTML.
 const markup = `
 <div id="links">
@@ -11,4 +13,4 @@ const markup = `
 </div>
 `;
 
-document.body.innerHTML = markup;
+links_outer.innerHTML = markup;
