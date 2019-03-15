@@ -12,26 +12,41 @@
     --color-purple: #bd93f9;
     --color-red: #ff5555;
     --color-yellow: #f1fa8c;
-
-    --size-link: 4em;
-    --size-spacing: 0.5rem;
 }
 
 body {
-    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
     color: var(--color-foreground);
+    background-color: var(--color-background-light);
     font-family: 'VT323', monospace;
 }
 
+#links-outer {
+    background-color: var(--color-background);
+    padding: 5em;
+}
+
 #links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0.5em;
+    grid-column-gap: 10em;
 }
 
 .link {
-    font-size: var(--size-link);
+    list-style: none;
+    font-size: 2em;
+}
+
+.link a {
     text-decoration: none;
     outline: none;
 }
 
-.link:hover {
+.link a:hover {
     color: var(--color-pink);
 }
