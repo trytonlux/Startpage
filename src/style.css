@@ -13,7 +13,7 @@
     --color-red: #ff5555;
     --color-yellow: #f1fa8c;
 
-    --size-link: 10rem;
+    --size-link: 4em;
     --size-spacing: 0.5rem;
 }
 
@@ -24,11 +24,14 @@ body {
 }
 
 #links {
-
 }
 
 .link {
-    /* color: var(--color-foreground); */
+    font-size: var(--size-link);
     text-decoration: none;
     outline: none;
+}
+
+.link:hover {
+    color: var(--color-pink);
 }
