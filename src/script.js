@@ -6,9 +6,11 @@ const links_outer = document.getElementById("links-outer");
 const markup = `
 <div id="links">
     ${links.map(link => `
-        <a class="link" href="${link.href}">
-            ${link.name}
-        </a>
+        <li class="link">
+            <a href="${link.href}">
+                ${link.name}
+            </a>
+        </li>
         `).join("")}
 </div>
 `;
