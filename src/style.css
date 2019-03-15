@@ -20,6 +20,9 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0 auto;
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-position: center;
     color: var(--color-foreground);
     background-color: var(--color-background-light);
     font-family: 'VT323', monospace;
@@ -27,6 +30,9 @@ body {
 
 #links-outer {
     background-color: var(--color-background);
+    border-color: var(--color-purple);
+    border-width: 2px;
+    border-style: solid;
     padding: 5em;
 }
 
