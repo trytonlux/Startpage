@@ -14,4 +14,3 @@ Key | Description
 --- | ---
 name | Name to show under icon
 href | URL to set href to
-icon | Name of icon from materialdesignicons.com

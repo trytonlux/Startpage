@@ -1,5 +1,5 @@
 /* -*- javascript -*- */
 
 links = [
-    {name: "", href: "", icon: ""},
+    {name: "", href: ""},
 ]
