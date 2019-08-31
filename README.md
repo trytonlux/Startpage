@@ -2,10 +2,14 @@
 
 Custom startpage for displaying links.
 
-![screenshot](screenshot.png)
+[tryton-vanmeer.github.io/Startpage](https://tryton-vanmeer.github.io/Startpage/)
 
 ### Config
 
-Copy the sample config file and edit as needed.
+```
+links = [
+    {name: "Name to display", href: "Link to webpage"},
+]
 
-`$ cp config.json.sample src/config.json`
+background = "Set background image to page"
+```
