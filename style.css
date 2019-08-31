@@ -23,6 +23,7 @@ body {
     /* background-image: url(""); */
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-color: var(--color-background-light);
     font-family: 'VT323', monospace;
 }
