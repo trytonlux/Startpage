@@ -2,18 +2,14 @@
 
 // Setup markup for links from config.js and set body innerHTML.
 const markup = `
-<div id="links">
-    <ul>
-        ${links.map(link => `
-            <li class="link">
-                <a href="${link.href}">
-                    ${link.name}
-                </a>
-            </li>
-            `).join("")}
-    </ul>
-</div>
+${links.map(link => `
+    <li class="link">
+        <a href="${link.href}">
+            ${link.name}
+        </a>
+    </li>
+`).join("")}
 `;
 
-const links_outer = document.getElementById("links-outer");
+const links_outer = document.getElementById("links");
 links_outer.innerHTML = markup;
