@@ -1,6 +1,6 @@
 "use strict";
 
-// Setup markup for links from config.json and set body innerHTML.
+// Setup markup for links from config.js and set body innerHTML.
 const markup = `
 <div id="links">
     ${links.map(link => `
@@ -15,6 +15,3 @@ const markup = `
 
 const links_outer = document.getElementById("links-outer");
 links_outer.innerHTML = markup;
-
-// Set body background image
-document.body.style.backgroundImage = `url("${background}")`
