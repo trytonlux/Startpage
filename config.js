@@ -31,5 +31,3 @@ links = [
     {name: "Titanium Server", href: "http://titanium-server.lan"},
     {name: "Wallhaven", href: "https://alpha.wallhaven.cc"}
 ]
-
-background = "https://w.wallhaven.cc/full/nk/wallhaven-nk7867.jpg"
