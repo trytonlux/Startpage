@@ -4,6 +4,7 @@
 const markup = `
 ${links.map(link => `
     <li class="link">
+        <img src="icon.png"></img>
         <a href="${link.href}">
             ${link.name}
         </a>
