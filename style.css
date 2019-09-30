@@ -35,5 +35,6 @@ li {
 
 a {
     color: var(--color-cyan);
+    font-size: 1.25em;
     outline: none;
 }
