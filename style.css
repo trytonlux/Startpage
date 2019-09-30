@@ -42,10 +42,15 @@ a {
     text-decoration: none;
     font-size: 1.25em;
     outline: none;
-    width: 95%;
+    width: 60%;
     display: inline-block;
 }
 
 .column-header {
     font-weight: bold;
+}
+
+.filesize,
+#size-header {
+    float: right;
 }
