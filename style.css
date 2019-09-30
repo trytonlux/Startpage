@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=VT323);
-
 :root {
-    --color-background: rgba(40, 42, 54, 0.95);
+    --color-background: #282A36;
     --color-background-light: #44475a;
     --color-background-lighter: #6272a4;
     --color-foreground: #f8f8f2;
@@ -15,44 +13,44 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    width: 60%;
     margin: 0 auto;
-    /* background-image: url(""); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--color-background-light);
-    font-family: 'VT323', monospace;
-}
-
-#links-outer {
     background-color: var(--color-background);
-    border-color: var(--color-purple);
-    border-width: 2px;
-    border-style: solid;
-    padding: 5em;
-}
-
-#links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 0.5em;
-    grid-column-gap: 10em;
-}
-
-.link {
-    list-style: none;
-    font-size: 2em;
-}
-
-.link a {
     color: var(--color-foreground);
-    text-decoration: none;
-    outline: none;
 }
 
-.link a:hover {
-    color: var(--color-pink);
+hr {
+    color: var(--color-background-lighter);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 6px;
+}
+
+li:hover {
+    background-color: var(--color-background-light);
+}
+
+a {
+    color: var(--color-cyan);
+    text-decoration: none;
+    font-size: 1.25em;
+    outline: none;
+    width: 60%;
+    display: inline-block;
+}
+
+.column-header {
+    font-weight: bold;
+}
+
+.filesize,
+#size-header {
+    float: right;
 }
