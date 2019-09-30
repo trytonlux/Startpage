@@ -39,8 +39,11 @@ li:hover {
 
 a {
     color: var(--color-cyan);
+    text-decoration: none;
     font-size: 1.25em;
     outline: none;
+    width: 95%;
+    display: inline-block;
 }
 
 .column-header {
