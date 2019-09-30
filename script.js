@@ -8,6 +8,7 @@ ${links.map(link => `
         <a href="${link.href}">
             ${link.name}
         </a>
+        <span class="filesize">${link.size}</span>
     </li>
 `).join("")}
 `;
