@@ -8,14 +8,14 @@ links = [
     // Social
     {name: "Hangouts", href: "https://hangouts.google.com", size: "4.40 MB "},
     {name: "Inbox", href: "https://inbox.google.com", size: "9.77 MB"},
-    {name: "Mastodon", href: "https://linuxrocks.online", size: "4.89 "},
+    {name: "Mastodon", href: "https://linuxrocks.online", size: "4.89 MB"},
     {name: "YouTube", href: "https://youtube.com/feed/subscriptions", size: "4.22 MB"},
 
     // Forums
     {name: "Level1Techs Forums", href: "https://forum.level1techs.com", size: "4.51 MB"},
     {name: "HE Forum", href:"https://forum.heavyelement.io", size: "1.11 MB"},
     {name: "Destination Linux", href:"https://discourse.destinationlinux.network/", size: "4.38 MB"},
-    {name: "GNOME Discourse", href: "https://discourse.gnome.org/", size: "10.26"},
+    {name: "GNOME Discourse", href: "https://discourse.gnome.org/", size: "10.26 MB"},
 
     // Reddit
     {name: "Reddit", href: "https://www.reddit.com", size: "980 KB"},
