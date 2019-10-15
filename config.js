@@ -16,6 +16,7 @@ links = [
     {name: "HE Forum", href:"https://forum.heavyelement.io", size: "1.11 MB"},
     {name: "Destination Linux", href:"https://discourse.destinationlinux.network/", size: "4.38 MB"},
     {name: "GNOME Discourse", href: "https://discourse.gnome.org/", size: "10.26 MB"},
+    {name: "LTT Forums", href: "https://linustechtips.com/main/", size: "2.61 MB"},
 
     // Reddit
     {name: "Reddit", href: "https://www.reddit.com", size: "980 KB"},
