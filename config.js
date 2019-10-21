@@ -7,7 +7,7 @@ links = [
 
     // Social
     {name: "Hangouts", href: "https://hangouts.google.com", size: "4.40 MB "},
-    {name: "Inbox", href: "https://inbox.google.com", size: "9.77 MB"},
+    {name: "Email", href: "https://mail.protonmail.com/inbox", size: "1.06 MB"},
     {name: "Mastodon", href: "https://linuxrocks.online", size: "4.89 MB"},
     {name: "YouTube", href: "https://youtube.com/feed/subscriptions", size: "4.22 MB"},
 
