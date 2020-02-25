@@ -5,7 +5,7 @@ const markup = `
 ${links.map(link => `
     <div class="link">
     <a href="${link.href}">
-        <img src="icon.png" width="128" height="128"></img>
+        <img src="${link.icon}" width="128" height="128"></img>
         <span>${link.name}</span>
     </a>
     </div>
