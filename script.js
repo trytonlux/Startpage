@@ -3,15 +3,14 @@
 // Setup markup for links from config.js and set body innerHTML.
 const markup = `
 ${links.map(link => `
-    <li class="link">
-        <img src="icon.png"></img>
-        <a href="${link.href}">
-            ${link.name}
-        </a>
-        <span class="filesize">${link.size}</span>
-    </li>
+    <div class="link">
+    <a href="${link.href}">
+        <img src="icon.png" width="128" height="128"></img>
+        <span>${link.name}</span>
+    </a>
+    </div>
 `).join("")}
 `;
 
-const links_outer = document.getElementById("links");
-links_outer.innerHTML = markup;
+const main = document.getElementById("main");
+main.innerHTML = markup;
