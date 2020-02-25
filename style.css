@@ -1,13 +1,6 @@
 :root {
-    --color-background: #282A36;
-    --color-background-light: #44475a;
-    --color-background-lighter: #6272a4;
+    --color-base: #2d2d2d;
+    --color-background: #353535
     --color-foreground: #f8f8f2;
-    --color-cyan: #8be9fd;
-    --color-green: #50fa7b;
-    --color-orange: #ffb86c;
-    --color-pink: #ff79c6;
-    --color-purple: #bd93f9;
-    --color-red: #ff5555;
-    --color-yellow: #f1fa8c;
+    --color-link: #3584e4;
 }
