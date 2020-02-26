@@ -32,6 +32,7 @@ main
 {
     display: inline-block;
     margin: 0 auto;
+    padding: 6px;
 }
 
 .link:hover
