@@ -28,6 +28,7 @@ links = [
     {name: "Steam", href: "https://store.steampowered.com"},
     {name: "GoG", href: "https://www.gog.com/"},
     {name: "Humble Bundle", href: "https://www.humblebundle.com"},
+    {name: "Chrono.GG", href: "https://www.chrono.gg/"},
 
     // Other
     {name: "Titanium Server", href: "http://titanium-server.lan"},
