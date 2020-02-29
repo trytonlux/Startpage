@@ -31,5 +31,6 @@ links = [
     {name: "Chrono.GG", href: "https://www.chrono.gg/"},
 
     // Other
+    {name: "SteamGridDB", href: "https://www.steamgriddb.com"},
     {name: "Titanium Server", href: "http://titanium-server.lan"},
 ]
