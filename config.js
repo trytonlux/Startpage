@@ -7,7 +7,7 @@ links = [
 
     // Social
     {name: "Hangouts", href: "https://hangouts.google.com"},
-    {name: "Email", href: "https://mail.protonmail.com/inbox"},
+    {name: "Email", href: "https://beta.protonmail.com/inbox"},
     {name: "Mastodon", href: "https://linuxrocks.online"},
     {name: "Invidious", href: "https://www.invidio.us/feed/subscriptions"},
 
