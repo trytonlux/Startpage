@@ -20,8 +20,6 @@ links = [
 
     // Reddit
     {name: "Reddit", href: "https://www.reddit.com"},
-    {name: "/m/Nintendo", href: "https://www.reddit.com/me/m/nintendo"},
-    {name: "/m/Linux", href: "https://www.reddit.com/me/m/linux"},
     {name: "/r/Linux_Gaming", href: "https://www.reddit.com/r/linux_gaming"},
 
     // Gaming
