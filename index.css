@@ -1,0 +1,45 @@
+:root
+{
+    --color-background: #282a36;
+    --color-text: #f8f8f2;
+    --color-pink: #ff79c6;
+    --color-cyan: #8be9fd;
+}
+
+body
+{
+    font-family: "JetBrains Mono", monospace, monospace;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    text-shadow: 0 0 10px var(--color-text);
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.text-pink
+{
+    color: var(--color-pink);
+    text-shadow: 0 0 10px var(--color-pink);
+}
+
+.text-cyan
+{
+    color: var(--color-cyan);
+    text-shadow: 0 0 10px var(--color-cyan);
+}
