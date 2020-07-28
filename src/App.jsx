@@ -6,6 +6,13 @@ class App extends React.Component
 {
     render()
     {
+        const items = [];
+
+        for (let link of links)
+        {
+        items.push(<li key={link}><a href={link.href}>{link.name}</a></li>);
+        }
+
         return(
             <>
             <main>
@@ -13,6 +20,9 @@ class App extends React.Component
                 <br/>
                 <span className="text-cyan">𝝺</span><span> ls</span>
                 <br/>
+                <ul>
+                    {items}
+                </ul>
             </main>
             </>
         );
