@@ -1,4 +1,4 @@
-let links = [
+const links = [
     // Developer
     {name: "Github", href: "https://github.com"},
     {name: "GitLab", href: "https://gitlab.com"},
