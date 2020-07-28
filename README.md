@@ -1,3 +1,3 @@
 # Startpage
 
-[tryton-vanmeer.github.io/Startpage](https://tryton-vanmeer.github.io/Startpage/)
+[trytonvanmeer.dev/Startpage/](https://trytonvanmeer.dev/Startpage/)
