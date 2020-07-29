@@ -1,0 +1,31 @@
+@keyframes terminal-blinking
+{
+    0%
+    {
+        color: var(--color-text);
+    }
+    49%
+    {
+        color: var(--color-text);
+    }
+    60%
+    {
+        color: transparent;
+    }
+    99%
+    {
+        color: transparent;
+    }
+    100%
+    {
+        color: var(--color-text);
+    }
+}
+
+.terminal-blinking
+{
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-name: terminal-blinking;
+    text-shadow: none;
+}
