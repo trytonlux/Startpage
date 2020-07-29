@@ -1,6 +1,12 @@
 body
 {
     font-family: "JetBrains Mono", monospace, monospace;
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    overflow: hidden;
 }
 
 ul
