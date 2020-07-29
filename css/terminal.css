@@ -45,6 +45,11 @@
     text-shadow: none;
 }
 
+.terminal-button-close:hover::before
+{
+    text-shadow: 0 0 10px var(--color-red);
+}
+
 .terminal-body
 {
     background-color: var(--color-background);
