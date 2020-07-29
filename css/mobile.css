@@ -1,0 +1,19 @@
+@media only screen
+    and (max-device-width: 576px)
+{
+    body
+    {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .terminal
+    {
+        width: 100%;
+    }
+
+    .terminal-body
+    {
+        min-height: 100vh;
+    }
+}
