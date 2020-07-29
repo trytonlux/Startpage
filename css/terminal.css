@@ -34,13 +34,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    max-height: 2.5em;
+}
+
+.terminal-button-close
+{
+    display: flex;
 }
 
 .terminal-button-close::before
 {
     content: "•";
     color: var(--color-red);
-    font-size: 2em;
+    font-size: 4em;
     margin-right: 6px;
     text-shadow: none;
 }
