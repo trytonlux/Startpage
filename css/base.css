@@ -1,0 +1,27 @@
+body
+{
+    font-family: "JetBrains Mono", monospace, monospace;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    margin-bottom: 2px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
