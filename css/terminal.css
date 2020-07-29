@@ -35,6 +35,8 @@
     flex-direction: row;
     justify-content: flex-end;
     max-height: 2.5em;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .terminal-button-close
