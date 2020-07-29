@@ -1,6 +1,7 @@
 :root
 {
     --color-background: #282a36;
+    --color-background-alt: #383A59;
     --color-text: #f8f8f2;
     --color-pink: #ff79c6;
     --color-cyan: #8be9fd;
@@ -20,7 +21,7 @@
 
 body
 {
-    background-color: var(--color-background);
+    background-color: var(--color-background-alt);
     color: var(--color-text);
     text-shadow: 0 0 10px var(--color-text);
 }
