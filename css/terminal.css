@@ -38,6 +38,9 @@
     color: var(--color-background);
     text-shadow: none;
     animation: none;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
 }
 
 .terminal-blinking
