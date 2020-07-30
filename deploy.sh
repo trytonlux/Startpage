@@ -6,13 +6,16 @@ then
     exit 1;
 fi
 
+echo "Pushing to GitHub (master)"
+git push origin master
+
 echo "Checking out gh-pages branch"
 git checkout gh-pages
 
 echo "Updating gh-pages branch"
 git rebase master
 
-echo "Pushing to GitHub"
+echo "Pushing to GitHub (gh-pages)"
 git push origin gh-pages
 
 echo "Checking out master branch"
