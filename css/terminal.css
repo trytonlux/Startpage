@@ -45,6 +45,11 @@
     margin-left: auto;
 }
 
+.terminal-header-close:hover
+{
+    fill: var(--color-red-dark);
+}
+
 .terminal-body
 {
     background-color: var(--color-background);
