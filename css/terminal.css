@@ -32,8 +32,6 @@
 {
     background-color: #3d3846;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     min-height: 32px;
@@ -44,6 +42,7 @@
 {
     fill: var(--color-red);
     margin-right: 6px;
+    margin-left: auto;
 }
 
 .terminal-body
