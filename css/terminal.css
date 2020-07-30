@@ -42,23 +42,7 @@
 
 .terminal-button-close
 {
-    display: flex;
-    align-items: center;
-    max-height: 2.5em;
-}
-
-.terminal-button-close::before
-{
-    content: "•";
-    color: var(--color-red);
-    font-size: 4em;
-    margin-right: 6px;
-    text-shadow: none;
-}
-
-.terminal-button-close:hover::before
-{
-    text-shadow: 0 0 10px var(--color-red);
+    fill: var(--color-red);
 }
 
 .terminal-body
