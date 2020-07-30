@@ -40,7 +40,7 @@
     max-height: 32px;
 }
 
-.terminal-button-close
+.terminal-header-close
 {
     fill: var(--color-red);
 }
