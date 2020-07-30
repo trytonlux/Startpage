@@ -56,6 +56,14 @@
     padding: 6px;
 }
 
+.terminal-off,
+.terminal-off span
+{
+    color: var(--color-background);
+    text-shadow: none;
+    animation: none;
+}
+
 .terminal-blinking
 {
     animation-duration: 1.2s;
