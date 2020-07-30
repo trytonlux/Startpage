@@ -1,18 +1,7 @@
-import links from "./config.js";
+import Terminal from "./terminal.js"
 
-function insert_items()
-{
-    const items = [];
+const terminal = new Terminal();
 
-    for (let link of links)
-    {
-        items.push(
-            `<li><a href="${link.href}">${link.name}<a/></li>`
-        );
-    }
-
-    const el = document.getElementById("list-links");
-    el.innerHTML = items.join("");
-}
-
-document.addEventListener("DOMContentLoaded", insert_items);
+document.addEventListener("DOMContentLoaded", ()=> {
+    terminal.insert_links();
+});
