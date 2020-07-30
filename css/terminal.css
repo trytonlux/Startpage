@@ -43,6 +43,7 @@
 .terminal-header-close
 {
     fill: var(--color-red);
+    margin-right: 6px;
 }
 
 .terminal-body
