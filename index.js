@@ -31,7 +31,7 @@ const links = [
     {name: "SteamGridDB", href: "https://www.steamgriddb.com"},
     {name: "Titanium Server", href: "http://titanium-server.lan"},
     {name: "Invidious", href: "https://www.youtube.com/feed/subscriptions"},
-    {name: "Channels", href: "/channels"},
+    {name: "Channels", href: "./Channels"},
 ]
 
 function insert_links()
