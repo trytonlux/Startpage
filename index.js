@@ -40,7 +40,9 @@ function insert_links(links)
 
     for (let link of links)
     {
-        items.push(`<li><a href="${link.href}">"${link.name}",<a/></li>`);
+        items.push(
+            `<li><a href="${link.href}"><span class="yellow">"${link.name}"</span>,<a/></li>`
+        );
     }
 
     let ul = document.getElementById("link-list");
