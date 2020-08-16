@@ -30,7 +30,7 @@ const links = [
     // Other
     {name: "SteamGridDB", href: "https://www.steamgriddb.com"},
     {name: "Titanium Server", href: "http://titanium-server.lan"},
-    {name: "Invidious", href: "https://www.invidio.us/feed/subscriptions"},
+    {name: "Invidious", href: "https://www.youtube.com/feed/subscriptions"},
     {name: "Channels", href: "/channels"},
 ]
 
