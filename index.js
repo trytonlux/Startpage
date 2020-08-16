@@ -1,4 +1,4 @@
-const links_index = [
+const links = [
     // Developer
     {name: "Github", href: "https://github.com"},
     {name: "GitLab", href: "https://gitlab.com"},
@@ -34,7 +34,7 @@ const links_index = [
     {name: "Channels", href: "#channels"},
 ]
 
-function insert_links(links)
+function insert_links()
 {
     let items = [];
 
@@ -50,5 +50,5 @@ function insert_links(links)
 }
 
 document.addEventListener("DOMContentLoaded", ()=> {
-    insert_links(links_index);
+    insert_links();
 });
