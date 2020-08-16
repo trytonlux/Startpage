@@ -9,6 +9,21 @@
     --color-yellow: #f1fa8c;
 }
 
+.pink
+{
+    color: var(--color-pink);
+}
+
+.purple
+{
+    color: var(--color-purple);
+}
+
+.yellow
+{
+    color: var(--color-yellow);
+}
+
 body
 {
     font-family: "JetBrains Mono", monospace, monospace;
