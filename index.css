@@ -29,12 +29,8 @@ body
     font-family: "JetBrains Mono", monospace, monospace;
     background-color: var(--color-background);
     color: var(--color-text);
-    display: flex;
     width: 50%;
-    height: 100vh;
     margin: 0 auto;
-    align-items: center;
-    overflow: hidden;
 }
 
 ul
@@ -42,7 +38,6 @@ ul
     list-style: none;
     margin: 0;
     padding: 0;
-    /* padding-left: 2em; */
 }
 
 li::before
