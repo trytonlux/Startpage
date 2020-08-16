@@ -1,7 +1,6 @@
 :root
 {
     --color-background: #282a36;
-    --color-background-alt: #383A59;
     --color-text: #f8f8f2;
     --color-pink: #ff79c6;
     --color-purple: #bd93f9;
@@ -12,7 +11,7 @@
 body
 {
     font-family: "JetBrains Mono", monospace, monospace;
-    background-color: var(--color-background-alt);
+    background-color: var(--color-background);
     color: var(--color-text);
     display: flex;
     width: 50%;
