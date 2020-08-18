@@ -27,6 +27,7 @@ const links = [
     {name: "Flashgitz", href: "https://www.youtube.com/channel/UCNnKprAG-MWLsk-GsbsC2BA/videos"},
     {name: "Gamers Nexus", href: "https://www.youtube.com/channel/UChIs72whgZI9w6d6FhwGGHA/videos"},
     {name: "Gigguk", href: "https://www.youtube.com/channel/UC7dF9qfBMXrSlaaFFDvV_Yg/videos"},
+    {name: "Hoeg Law", href: "https://www.youtube.com/c/HoegLaw/videos"},
     {name: "InfinitelyGalactic", href: "https://www.youtube.com/channel/UC3jSNmKWYA04R47fDcc1ImA/videos"},
     {name: "Internet Comment Etiquette with Erik", href: "https://www.youtube.com/channel/UCyWDmyZRjrGHeKF-ofFsT5Q/videos"},
     {name: "Jaboody Dubs", href: "https://www.youtube.com/channel/UCZ30YNIcUWuSz8eVJZtLEjw/videos"},
