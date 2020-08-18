@@ -78,6 +78,7 @@ const links = [
     {name: "TheJWittz", href: "https://www.youtube.com/channel/UCUIJFJJLhxIrZVdAVdwL3bQ/videos"},
     {name: "TheQuartering", href: "https://www.youtube.com/channel/UCfwE_ODI1YTbdjkzuSi1Nag/videos"},
     {name: "TheWarOwl", href: "https://www.youtube.com/channel/UCpFcHE36IoySjYj1Rytxyog/videos"},
+    {name: "This Is", href: "https://www.youtube.com/c/thisis/videos"},
     {name: "TLG", href: "https://www.youtube.com/channel/UCv1Kcz-CuGM6mxzL3B1_Eiw/videos"},
 ]
 
