@@ -52,6 +52,11 @@ a
     color: inherit;
 }
 
+a:hover .yellow
+{
+    text-decoration: underline;
+}
+
 @media only screen and (max-device-width: 576px)
 {
     body
