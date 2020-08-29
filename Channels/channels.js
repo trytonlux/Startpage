@@ -18,6 +18,7 @@ const links = [
     {name: "Chris Were Digital", href: "https://www.youtube.com/channel/UCAPR27YUyxmgwm3Wc2WSHLw/videos"},
     {name: "Cinemassacre", href: "https://www.youtube.com/channel/UC0M0rxSz3IF0CsSour1iWmw/videos"},
     {name: "Dan Bull", href: "https://www.youtube.com/channel/UC1hkAIJnb2CSmm7SPJaPR-A/videos"},
+    {name: "DASGeek", href: "https://www.youtube.com/c/DASGeek/videos"},
     {name: "Destination Linux Network", href: "https://www.youtube.com/channel/UCWJUSpXVHTaHErtGWC5qPlQ/videos"},
     {name: "DidYouKnowFood", href: "https://www.youtube.com/channel/UCh4q6c_OHmA7MTEWlQR-g5Q/videos"},
     {name: "DidYouKnowGaming?", href: "https://www.youtube.com/channel/UCyS4xQE6DK4_p3qXQwJQAyA/videos"},
