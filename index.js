@@ -28,6 +28,7 @@ const links = [
     {name: "Chrono.GG", href: "https://www.chrono.gg/"},
 
     // Other
+    {name: "PCPartPicker", href: "https://ca.pcpartpicker.com/"},
     {name: "SteamGridDB", href: "https://www.steamgriddb.com"},
     {name: "Titanium Server", href: "http://titanium-server.lan"},
     {name: "Invidious", href: "https://www.invidio.us/feed/subscriptions"},
