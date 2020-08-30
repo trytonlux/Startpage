@@ -69,7 +69,7 @@ const links = [
     {name: "SomeOrdinaryGamers", href: "https://www.youtube.com/channel/UCtMVHI3AJD4Qk4hcbZnI9ZQ/videos"},
     {name: "SpaceHamster", href: "https://www.youtube.com/channel/UCXV_RBIFNTulEdcuKkRZhBA/videos"},
     {name: "SquidTheSid", href: "https://www.youtube.com/channel/UCxR8q_XMkrrSc-DkHVtghIw/videos"},
-    {name: "SsethTzeentach", href: "https://www.youtube.com/channel/UCD6VugMZKRhSyzWEWA9W2fg/videos"},
+    {name: "SsethTzeentach", href: "https://www.bitchute.com/channel/yf20Ej01hStI/"},
     {name: "TeamFourStar", href: "https://www.youtube.com/channel/UCsvazPPlhZlch0-Z3wPByeg/videos"},
     {name: "TechLinked", href: "https://www.youtube.com/channel/UCeeFfhMcJa1kjtfZAGskOCA/videos"},
     {name: "Techquickie", href: "https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q/videos"},
