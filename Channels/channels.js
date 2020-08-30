@@ -22,7 +22,7 @@ const links = [
     {name: "Destination Linux Network", href: "https://www.youtube.com/channel/UCWJUSpXVHTaHErtGWC5qPlQ/videos"},
     {name: "DidYouKnowFood", href: "https://www.youtube.com/channel/UCh4q6c_OHmA7MTEWlQR-g5Q/videos"},
     {name: "DidYouKnowGaming?", href: "https://www.youtube.com/channel/UCyS4xQE6DK4_p3qXQwJQAyA/videos"},
-    {name: "DistroTube", href: "https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg/videos"},
+    {name: "DistroTube", href: "https://lbry.tv/@DistroTube"},
     {name: "Donut Operator", href: "https://www.youtube.com/c/DonutOperatorOfficial/videos"},
     {name: "Eevnos Linux", href: "https://www.youtube.com/channel/UClxCfSepAnuDI7hVCrfIhlg/videos"},
     {name: "Egoraptor", href: "https://www.youtube.com/channel/UC0gEw6pgNkLkkzMwzX4UtHA/videos"},
