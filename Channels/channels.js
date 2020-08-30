@@ -14,7 +14,7 @@ const links = [
     {name: "Channel Super Fun", href: "https://www.youtube.com/channel/UCBZiUUYeLfS5rIj4TQvgSvA/videos"},
     {name: "Chris Fisher", href: "https://www.youtube.com/channel/UCGwtC5MuvpqkxWyyV90olFQ/videos"},
     {name: "Chris Ray Gun", href: "https://www.youtube.com/channel/UCctjGdm2NlMNzIlxz02IsXA/videos"},
-    {name: "Chris Titus Tech", href: "https://www.youtube.com/channel/UCg6gPGh8HU2U01vaFCAsvmQ/videos"},
+    {name: "Chris Titus Tech", href: "https://lbry.tv/@christitustech"},
     {name: "Chris Were Digital", href: "https://share.tube/accounts/chriswere/videos"},
     {name: "Cinemassacre", href: "https://www.youtube.com/channel/UC0M0rxSz3IF0CsSour1iWmw/videos"},
     {name: "Dan Bull", href: "https://www.youtube.com/channel/UC1hkAIJnb2CSmm7SPJaPR-A/videos"},
