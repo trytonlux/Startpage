@@ -9,7 +9,7 @@ const links = [
     {name: "Bitwit", href: "https://www.youtube.com/channel/UCftcLVz-jtPXoH3cWUUDwYw/videos"},
     {name: "Brendaniel", href: "https://www.youtube.com/channel/UC7EpM9PXIn3bTIlJYiP1xWg/videos"},
     {name: "brutalmoose", href: "https://www.youtube.com/channel/UC18ju52OET36bdewLRHzPdQ/videos"},
-    {name: "Bryan Lunduke", href: "https://www.youtube.com/channel/UCkK9UDm_ZNrq_rIXCz3xCGA/videos"},
+    {name: "Bryan Lunduke", href: "https://lbry.tv/@Lunduke"},
     {name: "BulletBarry", href: "https://www.youtube.com/channel/UCu0sLdOcxsr3de-CwVLrpdg/videos"},
     {name: "Channel Super Fun", href: "https://www.youtube.com/channel/UCBZiUUYeLfS5rIj4TQvgSvA/videos"},
     {name: "Chris Fisher", href: "https://www.youtube.com/channel/UCGwtC5MuvpqkxWyyV90olFQ/videos"},
