@@ -78,7 +78,7 @@ const links = [
     {name: "The Food Theorists", href: "https://www.youtube.com/channel/UCHYoe8kQ-7Gn9ASOlmI0k6Q/videos"},
     {name: "The Game Theorists", href: "https://www.youtube.com/channel/UCo_IB5145EVNcf8hw1Kku7w/videos"},
     {name: "TheJWittz", href: "https://www.youtube.com/channel/UCUIJFJJLhxIrZVdAVdwL3bQ/videos"},
-    {name: "TheQuartering", href: "https://www.youtube.com/channel/UCfwE_ODI1YTbdjkzuSi1Nag/videos"},
+    {name: "TheQuartering", href: "https://lbry.tv/@TheQuartering"},
     {name: "TheWarOwl", href: "https://www.youtube.com/channel/UCpFcHE36IoySjYj1Rytxyog/videos"},
     {name: "This Is", href: "https://www.youtube.com/c/thisis/videos"},
     {name: "TLG", href: "https://lbry.tv/@TheLinuxGamer"},
