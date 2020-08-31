@@ -51,7 +51,6 @@ const links = [
     {name: "Luke Smith", href: "https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA/videos"},
     {name: "Matt McMuscles", href: "https://www.youtube.com/channel/UCiP_FwGyJQ_6P8k5ON5mncQ/videos"},
     {name: "Mind Drip Media", href: "https://www.youtube.com/channel/UCHu86o6BP1Qh9Ipz-ha6ISQ/videos"},
-    {name: "Mother's Basement", href: "https://www.youtube.com/channel/UCBs2Y3i14e1NWQxOGliatmg/videos"},
     {name: "Mumbo Jumbo", href: "https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg/videos"},
     {name: "nickisnotgreen", href: "https://youtube.com/channel/UCnTr3rLQySAokkQjXbduk7Q/videos"},
     {name: "PBGGameplay", href: "https://www.youtube.com/channel/UCS4_hcviJUA6beVsXb0xakQ/videos"},
