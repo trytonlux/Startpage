@@ -48,7 +48,7 @@ const links = [
     {name: "LMG Clips", href: "https://www.youtube.com/channel/UCFLFc8Lpbwt4jPtY1_Ai5yA/videos"},
     {name: "Lockstin & Gnoggin", href: "https://www.youtube.com/channel/UC6sjkvDzyY0J8o7k2Kc5rEw/videos"},
     {name: "Louis Rossmann", href: "https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w/videos"},
-    {name: "Luke Smith", href: "https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA/videos"},
+    {name: "Luke Smith", href: "https://videos.lukesmith.xyz/video-channels/luke_channel/videos"},
     {name: "Matt McMuscles", href: "https://www.youtube.com/channel/UCiP_FwGyJQ_6P8k5ON5mncQ/videos"},
     {name: "Mind Drip Media", href: "https://www.youtube.com/channel/UCHu86o6BP1Qh9Ipz-ha6ISQ/videos"},
     {name: "Mumbo Jumbo", href: "https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg/videos"},
