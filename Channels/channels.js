@@ -82,6 +82,7 @@ const links = [
     {name: "This Is", href: "https://www.youtube.com/c/thisis/videos"},
     {name: "TLG", href: "https://lbry.tv/@TheLinuxGamer"},
     {name: "YOGSCAST", href: "https://www.youtube.com/c/yogscast/videos"},
+    {name: "Rucka Rucka Ali", href: "https://www.youtube.com/c/itsRucka/videos"},
 ]
 
 function insert_links()
