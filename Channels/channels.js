@@ -85,6 +85,9 @@ const links = [
     {name: "Rucka Rucka Ali", href: "https://www.youtube.com/c/itsRucka/videos"},
 ]
 
+// Sort channels by name alphabetically
+links.sort((a, b) => a.name.localeCompare(b.name));
+
 function insert_links()
 {
     let items = [];
