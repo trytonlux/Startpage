@@ -96,11 +96,13 @@ window.addEventListener("keydown", (event) => {
     {
         case "ArrowDown":
             on_arrow_down();
-            break;
+            event.preventDefault();
+            return false;
 
         case "ArrowUp":
             on_arrow_up();
-            break;
+            event.preventDefault();
+            return false;
 
         case "Enter":
             on_enter();
