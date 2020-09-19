@@ -2,6 +2,7 @@
 {
     --color-background: #282a36;
     --color-text: #f8f8f2;
+    --color-comment: #6272a4;
     --color-pink: #ff79c6;
     --color-purple: #bd93f9;
     --color-cyan: #8be9fd;
@@ -44,6 +45,11 @@ ul
 li::before
 {
     content: "\00a0\00a0\00a0\00a0";
+}
+
+li.active span
+{
+    background-color: var(--color-comment);
 }
 
 a
