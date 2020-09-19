@@ -98,11 +98,6 @@ window.addEventListener("keydown", (event) => {
 
     switch(event.code)
     {
-        case "ArrowDown":
-            on_arrow_down();
-            event.preventDefault();
-            return false;
-
         case "KeyJ":
             on_arrow_down();
             break;
@@ -110,11 +105,6 @@ window.addEventListener("keydown", (event) => {
         case "KeyK":
             on_arrow_up();
             break;
-
-        case "ArrowUp":
-            on_arrow_up();
-            event.preventDefault();
-            return false;
 
         case "Enter":
             on_enter();
