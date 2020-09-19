@@ -85,6 +85,7 @@ const links = [
     {name: "Rucka Rucka Ali", href: "https://odysee.com/@Itsrucka:6"},
     {name: "Modern Vintage Gamer", href: "https://www.youtube.com/c/ModernVintageGamer/videos"},
     {name: "The Linux Experiment", href: "https://odysee.com/@TheLinuxExperiment:e"},
+    {name: "Hex DSL", href: "https://odysee.com/@hexdsl:7"},
 ]
 
 // Sort channels by name alphabetically
