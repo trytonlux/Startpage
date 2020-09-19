@@ -66,7 +66,10 @@ function on_arrow_up()
 
 function on_enter()
 {
-
+    if (ACTIVE_LINK !== -1)
+    {
+        console.log("Pressed Enter.")
+    }
 }
 
 
