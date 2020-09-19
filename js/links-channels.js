@@ -82,7 +82,7 @@ const links = [
     {name: "This Is", href: "https://www.youtube.com/c/thisis/videos"},
     {name: "TLG", href: "https://odysee.com/@TheLinuxGamer:f"},
     {name: "YOGSCAST", href: "https://www.youtube.com/c/yogscast/videos"},
-    {name: "Rucka Rucka Ali", href: "https://www.youtube.com/c/itsRucka/videos"},
+    {name: "Rucka Rucka Ali", href: "https://odysee.com/@Itsrucka:6"},
     {name: "Modern Vintage Gamer", href: "https://www.youtube.com/c/ModernVintageGamer/videos"},
     {name: "The Linux Experiment", href: "https://odysee.com/@TheLinuxExperiment:e"},
 ]
