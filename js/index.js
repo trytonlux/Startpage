@@ -36,13 +36,32 @@ function on_arrow_down()
         ACTIVE_LINK = 0;
         link_list[ACTIVE_LINK].classList.toggle("active");
     }
-    // ACTIVE_LINK += 1;
-    // update_active();
 }
 
 function on_arrow_up()
 {
+    try
+    {
+        link_list[ACTIVE_LINK--].classList.toggle("active");
+    }
+    catch (error)
+    {
+        if (ACTIVE_LINK === -2 || ACTIVE_LINK === 0)
+        {
+            ACTIVE_LINK = link_list.length - 1;
+            console.log(ACTIVE_LINK);
+        }
+    }
 
+    try
+    {
+        link_list[ACTIVE_LINK].classList.toggle("active");
+    }
+    catch (error)
+    {
+        ACTIVE_LINK = link_list.length - 1;
+        link_list[ACTIVE_LINK].classList.toggle("active");
+    }
 }
 
 let ACTIVE_LINK = -1;
