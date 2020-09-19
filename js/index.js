@@ -13,6 +13,24 @@ function insert_links()
     ul.innerHTML = items.join("");
 }
 
+let ACTIVE_LINK = -1;
+let link_list;
+
 document.addEventListener("DOMContentLoaded", ()=> {
     insert_links();
+
+    link_list = document.getElementById("link-list").children;
+});
+
+window.addEventListener("keydown", (event) => {
+    if (event.defaultPrevented)
+    {
+        return; // Do nothing if event already handled.
+    }
+
+    switch(event.code)
+    {
+        case "ArrowDown":
+            break;
+    }
 });
