@@ -84,7 +84,7 @@ const links = [
     {name: "YOGSCAST", href: "https://www.youtube.com/c/yogscast/videos"},
     {name: "Rucka Rucka Ali", href: "https://www.youtube.com/c/itsRucka/videos"},
     {name: "Modern Vintage Gamer", href: "https://www.youtube.com/c/ModernVintageGamer/videos"},
-    {name: "The Linux Experiment", href: "https://tilvids.com/accounts/thelinuxexperiment/videos"},
+    {name: "The Linux Experiment", href: "https://odysee.com/@TheLinuxExperiment:e"},
 ]
 
 // Sort channels by name alphabetically
