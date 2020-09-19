@@ -68,7 +68,9 @@ function on_enter()
 {
     if (ACTIVE_LINK !== -1)
     {
-        console.log("Pressed Enter.")
+        const url = link_list[ACTIVE_LINK].children[0].href;
+
+        window.open(url);
     }
 }
 
