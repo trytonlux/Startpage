@@ -64,6 +64,11 @@ function on_arrow_up()
     }
 }
 
+function on_enter()
+{
+
+}
+
 
 // MAIN
 
@@ -90,6 +95,10 @@ window.addEventListener("keydown", (event) => {
 
         case "ArrowUp":
             on_arrow_up();
+            break;
+
+        case "Enter":
+            on_enter();
             break;
     }
 });
