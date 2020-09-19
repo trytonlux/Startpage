@@ -36,6 +36,8 @@ function on_arrow_down()
         ACTIVE_LINK = 0;
         link_list[ACTIVE_LINK].classList.toggle("active");
     }
+
+    link_list[ACTIVE_LINK].scrollIntoView(false);
 }
 
 function on_arrow_up()
@@ -62,6 +64,8 @@ function on_arrow_up()
         ACTIVE_LINK = link_list.length - 1;
         link_list[ACTIVE_LINK].classList.toggle("active");
     }
+
+    link_list[ACTIVE_LINK].scrollIntoView(false);
 }
 
 function on_enter()
