@@ -15,7 +15,29 @@ function insert_links()
 
 function on_arrow_down()
 {
+    try
+    {
+        link_list[ACTIVE_LINK++].classList.toggle("active");
+    }
+    catch (error)
+    {
+        if (ACTIVE_LINK === -1)
+        {
+            ACTIVE_LINK++;
+        }
+    }
 
+    try
+    {
+        link_list[ACTIVE_LINK].classList.toggle("active");
+    }
+    catch (error)
+    {
+        ACTIVE_LINK = 0;
+        link_list[ACTIVE_LINK].classList.toggle("active");
+    }
+    // ACTIVE_LINK += 1;
+    // update_active();
 }
 
 function on_arrow_up()
