@@ -99,6 +99,14 @@ window.addEventListener("keydown", (event) => {
             event.preventDefault();
             return false;
 
+        case "KeyJ":
+            on_arrow_down();
+            break;
+
+        case "KeyK":
+            on_arrow_up();
+            break;
+
         case "ArrowUp":
             on_arrow_up();
             event.preventDefault();
