@@ -13,6 +13,16 @@ function insert_links()
     ul.innerHTML = items.join("");
 }
 
+function on_arrow_down()
+{
+
+}
+
+function on_arrow_up()
+{
+
+}
+
 let ACTIVE_LINK = -1;
 let link_list;
 
@@ -31,6 +41,11 @@ window.addEventListener("keydown", (event) => {
     switch(event.code)
     {
         case "ArrowDown":
+            on_arrow_down();
+            break;
+
+        case "ArrowUp":
+            on_arrow_up();
             break;
     }
 });
