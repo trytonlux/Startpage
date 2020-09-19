@@ -64,6 +64,9 @@ function on_arrow_up()
     }
 }
 
+
+// MAIN
+
 let ACTIVE_LINK = -1;
 let link_list;
 
