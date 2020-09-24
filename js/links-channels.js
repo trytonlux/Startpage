@@ -44,7 +44,6 @@ const links = [
     {name: "Level1Techs", href: "https://www.youtube.com/channel/UC4w1YQAJMWOz4qtxinq55LQ/videos"},
     {name: "LGR", href: "https://www.youtube.com/channel/UCLx053rWZxCiYWsBETgdKrQ/videos"},
     {name: "Linus Tech Tips", href: "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw/videos"},
-    {name: "Little Kuriboh", href: "https://www.youtube.com/channel/UC2NU0s1H0p9N4jvF7qV59vA/videos"},
     {name: "LMG Clips", href: "https://www.youtube.com/channel/UCFLFc8Lpbwt4jPtY1_Ai5yA/videos"},
     {name: "Lockstin & Gnoggin", href: "https://www.youtube.com/channel/UC6sjkvDzyY0J8o7k2Kc5rEw/videos"},
     {name: "Louis Rossmann", href: "https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w/videos"},
