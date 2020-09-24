@@ -1,6 +1,5 @@
 const links = [
     {name: "3kliksphilip", href: "https://www.youtube.com/channel/UCmu9PVIZBk-ZCi-Sk2F2utA/videos"},
-    {name: "Alan Pope", href: "https://www.youtube.com/channel/UCFNOT8x4KDYQQPUtmDsvaYA/videos"},
     {name: "AntVenom", href: "https://www.youtube.com/channel/UCK376qNDlNZZDNHsnaWuTeg/videos"},
     {name: "Arlo", href: "https://www.youtube.com/channel/UC-9QiiVaViuqMhLp1XEwdxA/videos"},
     {name: "Armoured Skeptic", href: "https://www.youtube.com/channel/UC1BWMtZbNLVMSFgwSukjqCw/videos"},
