@@ -34,7 +34,6 @@ const links = [
     {name: "Internet Comment Etiquette with Erik", href: "https://www.youtube.com/channel/UCyWDmyZRjrGHeKF-ofFsT5Q/videos"},
     {name: "Jaboody Dubs", href: "https://www.youtube.com/channel/UCZ30YNIcUWuSz8eVJZtLEjw/videos"},
     {name: "jacksepticeye", href: "https://www.youtube.com/channel/UCYzPXprvl5Y-Sf0g4vX-m6g/videos"},
-    {name: "Jeff Holiday", href: "https://www.youtube.com/channel/UCAldq8BAAGdsX9UyK_09-ZA/videos"},
     {name: "JelloApocalypse", href: "https://www.youtube.com/channel/UCP4nS6ag1-E6TzlQvaWfiZg/videos"},
     {name: "JonTronShow", href: "https://www.youtube.com/channel/UCdJdEguB1F1CiYe7OEi3SBg/videos"},
     {name: "kenny lauderdale", href: "https://www.youtube.com/channel/UC6dsQSn70Cem7zFsUANHqpQ/videos"},
