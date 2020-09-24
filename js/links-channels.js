@@ -7,7 +7,6 @@ const links = [
     {name: "Austin Eruption", href: "https://www.youtube.com/channel/UC0SyhPy7VsMQCIYDszFaplQ/videos"},
     {name: "Austin Evans", href: "https://www.youtube.com/channel/UCXGgrKt94gR6lmN4aN3mYTg/videos"},
     {name: "Bitwit", href: "https://www.youtube.com/channel/UCftcLVz-jtPXoH3cWUUDwYw/videos"},
-    {name: "Brendaniel", href: "https://www.youtube.com/channel/UC7EpM9PXIn3bTIlJYiP1xWg/videos"},
     {name: "brutalmoose", href: "https://www.youtube.com/channel/UC18ju52OET36bdewLRHzPdQ/videos"},
     {name: "Bryan Lunduke", href: "https://odysee.com/@Lunduke:e"},
     {name: "BulletBarry", href: "https://www.youtube.com/channel/UCu0sLdOcxsr3de-CwVLrpdg/videos"},
