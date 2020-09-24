@@ -73,8 +73,6 @@ const links = [
     {name: "TechLinked", href: "https://www.youtube.com/channel/UCeeFfhMcJa1kjtfZAGskOCA/videos"},
     {name: "Techquickie", href: "https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q/videos"},
     {name: "The Completionist", href: "https://www.youtube.com/channel/UCPYJR2EIu0_MJaDeSGwkIVw/videos"},
-    {name: "The Film Theorists", href: "https://www.youtube.com/channel/UC3sznuotAs2ohg_U__Jzj_Q/videos"},
-    {name: "The Food Theorists", href: "https://www.youtube.com/channel/UCHYoe8kQ-7Gn9ASOlmI0k6Q/videos"},
     {name: "The Game Theorists", href: "https://www.youtube.com/channel/UCo_IB5145EVNcf8hw1Kku7w/videos"},
     {name: "TheJWittz", href: "https://www.youtube.com/channel/UCUIJFJJLhxIrZVdAVdwL3bQ/videos"},
     {name: "TheQuartering", href: "https://odysee.com/@TheQuartering:1"},
