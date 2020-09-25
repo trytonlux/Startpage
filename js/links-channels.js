@@ -56,7 +56,6 @@ const links = [
     {name: "PushingUpRoses", href: "https://www.youtube.com/channel/UCCTNXqhWPba9Xh8gx0EKOtQ/videos"},
     {name: "Scarfulhu", href: "https://www.youtube.com/channel/UC5qrE62e0455xvZ_QYfBYSA/videos"},
     {name: "Scott The Woz", href: "https://www.youtube.com/channel/UC4rqhyiTs7XyuODcECvuiiQ/videos"},
-    {name: "SethBling", href: "https://www.youtube.com/channel/UC8aG3LDTDwNR1UQhSn9uVrw/videos"},
     {name: "Shoe0nHead", href: "https://www.youtube.com/channel/UC0aanx5rpr7D1M7KCFYzrLQ/videos"},
     {name: "ShortCircuit", href: "https://www.youtube.com/channel/UCdBK94H6oZT2Q7l0-b0xmMg/videos"},
     {name: "SomeOrdinaryGamers", href: "https://www.youtube.com/channel/UCtMVHI3AJD4Qk4hcbZnI9ZQ/videos"},
