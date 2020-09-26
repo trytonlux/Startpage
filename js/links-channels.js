@@ -44,7 +44,6 @@ const links = [
     {name: "Louis Rossmann", href: "https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w/videos"},
     {name: "Luke Smith", href: "https://videos.lukesmith.xyz/video-channels/luke_channel/videos"},
     {name: "Matt McMuscles", href: "https://www.youtube.com/channel/UCiP_FwGyJQ_6P8k5ON5mncQ/videos"},
-    {name: "Mind Drip Media", href: "https://www.youtube.com/channel/UCHu86o6BP1Qh9Ipz-ha6ISQ/videos"},
     {name: "Mumbo Jumbo", href: "https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg/videos"},
     {name: "nickisnotgreen", href: "https://youtube.com/channel/UCnTr3rLQySAokkQjXbduk7Q/videos"},
     {name: "PewDiePie", href: "https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw/videos"},
