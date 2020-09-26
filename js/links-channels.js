@@ -47,7 +47,6 @@ const links = [
     {name: "Mind Drip Media", href: "https://www.youtube.com/channel/UCHu86o6BP1Qh9Ipz-ha6ISQ/videos"},
     {name: "Mumbo Jumbo", href: "https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg/videos"},
     {name: "nickisnotgreen", href: "https://youtube.com/channel/UCnTr3rLQySAokkQjXbduk7Q/videos"},
-    {name: "PBGGameplay", href: "https://www.youtube.com/channel/UCS4_hcviJUA6beVsXb0xakQ/videos"},
     {name: "NormalBoots", href: "https://www.youtube.com/channel/UCGB4yHg_Pg_CigeTxm_rygg/videos"},
     {name: "PewDiePie", href: "https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw/videos"},
     {name: "PeanutButterGamer", href: "https://www.youtube.com/channel/UCRBkeMoYX02w-0qVIKNkruw/videos"},
