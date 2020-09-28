@@ -31,5 +31,4 @@ const links = [
     {name: "PCPartPicker", href: "https://ca.pcpartpicker.com/"},
     {name: "Linux Kernel Newbies", href: "https://kernelnewbies.org/LinuxChanges"},
     {name: "SteamGridDB", href: "https://www.steamgriddb.com"},
-    {name: "Channels", href: "./channels"},
 ]
