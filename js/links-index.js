@@ -14,7 +14,6 @@ const links = [
     {name: "Level1Techs Forums", href: "https://forum.level1techs.com"},
     {name: "HE Forum", href:"https://forum.heavyelement.io"},
     {name: "Destination Linux", href:"https://discourse.destinationlinux.network/"},
-    {name: "GNOME Discourse", href: "https://discourse.gnome.org/"},
     {name: "LTT Forums", href: "https://linustechtips.com/main/"},
 
     // Reddit
