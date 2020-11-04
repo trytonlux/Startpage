@@ -24,7 +24,6 @@ const links = [
     {name: "Steam", href: "https://store.steampowered.com"},
     {name: "GoG", href: "https://www.gog.com/"},
     {name: "Humble Bundle", href: "https://www.humblebundle.com"},
-    {name: "Chrono.GG", href: "https://www.chrono.gg/"},
 
     // Other
     {name: "PCPartPicker", href: "https://ca.pcpartpicker.com/"},
