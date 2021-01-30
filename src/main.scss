@@ -39,12 +39,23 @@ html
 
     .app-icon-inner
     {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         height: 64px;
         width: 64px;
 
         border-radius: 6px;
 
-        background-color: #ff5555;
+        background-color: #000;
+
+        svg
+        {
+            color: #f8f8f2;
+            height: 60%;
+            width: 60%;
+        }
     }
 
     .app-icon-label
