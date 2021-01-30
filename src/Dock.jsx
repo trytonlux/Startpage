@@ -1,4 +1,5 @@
 import React from "react";
+import AppIcon from "./AppIcon";
 
 class Dock extends React.Component
 {
@@ -7,12 +8,7 @@ class Dock extends React.Component
         return(
           <div className="dock">
 
-              <div className="app-icon">
-                  <div className="app-icon-inner">
-
-                  </div>
-                  <span className="app-icon-label">Github</span>
-              </div>
+              <AppIcon />
 
           </div>
         );
