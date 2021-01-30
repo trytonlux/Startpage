@@ -20,6 +20,44 @@ html
     grid-template-rows: 1fr auto;
 }
 
+.app-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 82px;
+    width: 82px;
+
+    border-radius: 12px;
+
+    &:hover
+    {
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+    }
+
+    .app-icon-inner
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 64px;
+        width: 64px;
+
+        border-radius: 12px;
+
+        background-color: #ff5555;
+
+        span
+        {
+            font-size: 1em;
+            font-weight: bold;
+            color: #f8f8f2;
+        }
+    }
+}
+
 .dock
 {
     grid-row-start: 2;
@@ -29,7 +67,7 @@ html
     justify-content: center;
     align-items: center;
 
-    height: 82px;
+    height: 94px;
     width: min-content;
 
     margin: 0 auto 12px auto;
