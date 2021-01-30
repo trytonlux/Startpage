@@ -31,9 +31,9 @@ html
 
     height: 82px;
     width: min-content;
-    margin: 0 auto;
 
-    margin-bottom: 12px;
+    margin: 0 auto 12px auto;
+    padding: 0 12px 0 12px;
 
     background-color: rgba($color: #000000, $alpha: 0.4);
     border-radius: 16px;
