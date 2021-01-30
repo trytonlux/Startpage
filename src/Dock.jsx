@@ -8,6 +8,8 @@ class Dock extends React.Component
           <div className="dock">
               <span>Hello</span>
               <span>World</span>
+              <span>Next</span>
+              <span>App</span>
               <span>:::</span>
           </div>
         );
