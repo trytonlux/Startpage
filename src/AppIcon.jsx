@@ -1,5 +1,5 @@
 import React from "react";
-import { GithubIcon } from "./icons";
+import SVGIcon from "./SVGIcon";
 
 class AppIcon extends React.Component
 {
@@ -8,9 +8,9 @@ class AppIcon extends React.Component
         return(
             <div className="app-icon">
                   <div className="app-icon-inner">
-                      <GithubIcon />
+                      <SVGIcon name="github" />
                   </div>
-                  <span className="app-icon-label">Github</span>
+                  <span className="app-icon-label"></span>
               </div>
         );
     }
