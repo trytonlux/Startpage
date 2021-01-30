@@ -6,10 +6,12 @@ class Dock extends React.Component
     {
         return(
           <div className="dock">
-              <span>Hello</span>
-              <span>World</span>
-              <span>Next</span>
-              <span>App</span>
+              <div className="app-icon">
+                  <div className="app-icon-inner">
+                    <span>Github</span>
+                  </div>
+              </div>
+
               <span>:::</span>
           </div>
         );
