@@ -1,4 +1,4 @@
-import "bulma/css/bulma.css";
+import "bulma/bulma.sass";
 
 import React from "react";
 import ReactDOM from "react-dom";
