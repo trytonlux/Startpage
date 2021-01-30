@@ -8,7 +8,10 @@ class Dock extends React.Component
           <div className="dock">
 
               <div className="app-icon">
-                  <span>Github</span>
+                  <div className="app-icon-inner">
+
+                  </div>
+                  <span className="app-icon-label">Github</span>
               </div>
 
           </div>
