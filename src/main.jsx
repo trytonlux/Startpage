@@ -1,12 +1,13 @@
 import "bulma/bulma.sass";
+import "./main.scss";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import Dock from "./Dock";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Dock />
     </React.StrictMode>,
     document.getElementById("root")
 )
