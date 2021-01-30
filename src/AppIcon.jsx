@@ -1,4 +1,5 @@
 import React from "react";
+import { GithubIcon } from "./icons";
 
 class AppIcon extends React.Component
 {
@@ -7,9 +8,9 @@ class AppIcon extends React.Component
         return(
             <div className="app-icon">
                   <div className="app-icon-inner">
-
+                      <GithubIcon />
                   </div>
-                  <span className="app-icon-label"></span>
+                  <span className="app-icon-label">Github</span>
               </div>
         );
     }
