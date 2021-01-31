@@ -15,7 +15,7 @@ class AppIcon extends React.Component
         }
 
         return(
-            <div className="app-icon">
+            <a className="app-icon" href={this.props.link}>
                 <div className="app-icon-inner" style={style}>
                     <SVGIcon name={this.props.icon} />
                 </div>
@@ -23,7 +23,7 @@ class AppIcon extends React.Component
                 {this.props.label !== undefined &&
                     <span className="app-icon-label">{this.props.label}</span>
                 }
-              </div>
+              </a>
         );
     }
 }
