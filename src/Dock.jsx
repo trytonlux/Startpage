@@ -9,6 +9,11 @@ class Dock extends React.Component
           <div className="dock">
 
               <AppIcon icon="github" bg="#000" />
+              <AppIcon icon="github" bg="#000" />
+              <AppIcon icon="github" bg="#000" />
+              <AppIcon icon="github" bg="#000" />
+
+              <AppIcon icon="launcher" />
 
           </div>
         );
