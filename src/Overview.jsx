@@ -7,13 +7,16 @@ class Overview extends React.Component
     {
         return(
             <div className="overview">
-                <AppIcon icon="github" bg="#161b22" />
-                <AppIcon icon="github" bg="#161b22" />
-                <AppIcon icon="github" bg="#161b22" />
-                <AppIcon icon="github" bg="#161b22" />
-                <AppIcon icon="github" bg="#161b22" />
-                <AppIcon icon="github" bg="#161b22" />
-                <AppIcon icon="github" bg="#161b22" />
+                <div className="overview-inner">
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                </div>
             </div>
         );
     }
