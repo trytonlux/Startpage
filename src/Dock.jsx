@@ -8,7 +8,7 @@ class Dock extends React.Component
         return(
           <div className="dock">
 
-              <AppIcon icon="github" />
+              <AppIcon icon="github" bg="#000" />
 
           </div>
         );

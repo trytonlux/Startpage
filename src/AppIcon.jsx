@@ -10,9 +10,13 @@ class AppIcon extends React.Component
 
     render()
     {
+        const style = {
+            backgroundColor: this.props.bg
+        }
+
         return(
             <div className="app-icon">
-                <div className="app-icon-inner">
+                <div className="app-icon-inner" style={style}>
                     <SVGIcon name={this.props.icon} />
                 </div>
 
