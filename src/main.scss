@@ -82,7 +82,20 @@ html
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-auto-rows: min-content;
-        gap: 12px;
+        gap: 24px;
+
+        max-height: calc(174px * 4);
+
+        overflow-y: scroll;
+
+        // Hide scrollbar - Chrome/Safari
+        &::-webkit-scrollbar
+        {
+            display: none;
+        }
+
+        // Hide scrollbar - Firefox
+        scrollbar-width: none;
     }
 
     .app-icon
