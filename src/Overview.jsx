@@ -3,11 +3,41 @@ import AppIcon from "./AppIcon";
 
 class Overview extends React.Component
 {
+    constructor(props)
+    {
+        super(props);
+
+        this.overview_ref = React.createRef();
+    }
+
+    componentDidMount()
+    {
+        this.overview_ref.current.addEventListener(
+            "wheel", (event) => {
+                event.preventDefault();
+            }, false
+        );
+    }
+
     render()
     {
         return(
             <div className="overview">
-                <div className="overview-inner">
+                <div ref={this.overview_ref} className="overview-inner">
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
