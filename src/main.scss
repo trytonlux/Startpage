@@ -83,6 +83,15 @@ html
         grid-auto-rows: min-content;
         gap: 12px;
     }
+
+    .app-icon
+    {
+        .app-icon-inner
+        {
+            height: 128px;
+            width: 128px;
+        }
+    }
 }
 
 .dock
