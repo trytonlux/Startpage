@@ -27,12 +27,15 @@ html
     align-items: center;
     justify-content: center;
 
+    outline: none;
+
     padding: 12px;
 
     border-radius: 6px;
 
     &:hover
     {
+        cursor: inherit;
         background-color: rgba($color: #ffffff, $alpha: 0.1);
     }
 
