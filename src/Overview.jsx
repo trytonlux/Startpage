@@ -14,6 +14,25 @@ class Overview extends React.Component
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
+
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
                     <AppIcon icon="github" label="GitHub" bg="#161b22" />
                 </div>

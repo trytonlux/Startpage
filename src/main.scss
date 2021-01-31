@@ -75,6 +75,7 @@ html
 {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .overview-inner
     {
@@ -88,8 +89,8 @@ html
     {
         .app-icon-inner
         {
-            height: 128px;
-            width: 128px;
+            height: 96px;
+            width: 96px;
         }
     }
 }
