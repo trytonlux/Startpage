@@ -8,7 +8,7 @@ class Overview extends React.Component
         super(props);
         this.state = { show: false };
 
-        this.overview_ref = React.createRef();
+        this.overview = React.createRef();
     }
 
     componentDidMount()
@@ -29,7 +29,7 @@ class Overview extends React.Component
         {
             return(
                 <div className="overview">
-                    <div ref={this.overview_ref} className="overview-inner">
+                    <div ref={this.overview} className="overview-inner">
                         <AppIcon icon="github" label="GitHub" bg="#161b22" />
                         <AppIcon icon="github" label="GitHub" bg="#161b22" />
                         <AppIcon icon="github" label="GitHub" bg="#161b22" />
