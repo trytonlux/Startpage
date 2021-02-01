@@ -16,7 +16,7 @@ class Dock extends React.Component
             <AppIcon icon="email" bg="#505061" />
             <AppIcon icon="steam" bg="#2c2e35" />
 
-            <AppIcon icon="launcher" onClick={this.props.toggle_overview} />
+            <AppIcon icon="launcher" onClick={this.props.on_overview_launcher_clicked} />
         </div>
         );
     }

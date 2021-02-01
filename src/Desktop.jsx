@@ -8,16 +8,14 @@ class Desktop extends React.Component
     {
         super(props);
         this.state = { show_overview: false };
-
-        this.overview = React.createRef();
     }
 
     render()
     {
         return(
             <>
-            <Overview ref={this.overview} />
-            <Dock toggle_overview={() => this.overview.current.toggle_show()} />
+            <Overview />
+            <Dock on_overview_launcher_clicked={() => console.log("Clicked launcher")} />
             </>
         );
     }
