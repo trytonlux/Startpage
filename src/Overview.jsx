@@ -10,12 +10,15 @@ class Overview extends React.Component
         this.overview = React.createRef();
     }
 
+    on_overview_scroll(event)
+    {
+        event.preventDefault();
+    }
+
     componentDidMount()
     {
         this.overview.current.addEventListener(
-            "wheel", (event) => {
-                event.preventDefault();
-            }, false
+            "wheel", this.on_overview_scroll, false
         );
     }
 
