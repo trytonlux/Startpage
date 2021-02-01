@@ -3,13 +3,11 @@ import "./main.scss";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Overview from "./Overview";
-import Dock from "./Dock";
+import Desktop from "./Desktop";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Overview />
-        <Dock />
+        <Desktop />
     </React.StrictMode>,
     document.getElementById("root")
 )
