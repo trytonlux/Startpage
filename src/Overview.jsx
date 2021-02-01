@@ -8,11 +8,22 @@ class Overview extends React.Component
         super(props);
 
         this.overview = React.createRef();
+
+        this.scroll_overview = this.scroll_overview.bind(this);
+    }
+
+    scroll_overview(position)
+    {
+        this.overview.current.scroll({
+            top: position
+        });
     }
 
     on_overview_scroll(event)
     {
         event.preventDefault();
+
+        this.scroll_overview(150);
     }
 
     componentDidMount()
