@@ -1,34 +1,41 @@
 import React from "react";
 import AppIcon from "./AppIcon";
 
-class Overview extends React.Component
+class Overview extends React.Component<{}, {}>
 {
-    constructor(props)
+    overview = React.createRef<HTMLDivElement>();
+
+    scroll_overview(position: number)
     {
-        super(props);
-
-        this.overview = React.createRef();
-
-        this.scroll_overview = this.scroll_overview.bind(this);
+        if (this.overview.current)
+        {
+            this.overview.current.scroll({
+                top: position
+            });
+        }
     }
 
-    scroll_overview(position)
-    {
-        this.overview.current.scroll({
-            top: position
-        });
-    }
-
-    on_overview_scroll(event)
+    on_overview_scroll = (event: WheelEvent) =>
     {
         event.preventDefault();
 
-        this.scroll_overview(150);
+        // this.scroll_overview(150);
+
+        console.log(this.overview);
+
+        // if (this.overview.current)
+        // {
+        //     this.overview.current.scroll({
+        //         top: 150
+        //     });
+        // }
     }
 
     componentDidMount()
     {
-        this.overview.current.addEventListener(
+        const overview = this.overview.current!;
+
+        overview.addEventListener(
             "wheel", this.on_overview_scroll, false
         );
     }

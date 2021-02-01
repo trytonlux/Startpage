@@ -1,5 +1,5 @@
 import React from "react";
-// import Overview from "./Overview";
+import Overview from "./Overview";
 import Dock from "./Dock";
 
 interface DesktopState
@@ -17,7 +17,7 @@ class Desktop extends React.Component<{}, DesktopState>
     {
         return(
             <>
-            {/* <Overview /> */}
+            <Overview />
             <Dock onOverviewLauncherClicked={() => console.log("Clicked launcher")} />
             </>
         );
