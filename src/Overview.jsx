@@ -15,7 +15,9 @@ class Overview extends React.Component
 
     toggle_show()
     {
-        this.setState({ show: true });
+        this.setState({
+            show: !this.state.show
+        });
     }
 
     componentDidMount()
