@@ -10,4 +10,4 @@ ReactDOM.render(
         <Desktop />
     </React.StrictMode>,
     document.getElementById("root")
-)
+);
