@@ -23,7 +23,7 @@ class AppIcon extends React.Component
                 {this.props.label !== undefined &&
                     <span className="app-icon-label">{this.props.label}</span>
                 }
-              </a>
+            </a>
         );
     }
 }
