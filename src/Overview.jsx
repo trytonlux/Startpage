@@ -13,11 +13,14 @@ class Overview extends React.Component
 
     componentDidMount()
     {
-        this.overview_ref.current.addEventListener(
-            "wheel", (event) => {
-                event.preventDefault();
-            }, false
-        );
+        if (this.state.show)
+        {
+            this.overview_ref.current.addEventListener(
+                "wheel", (event) => {
+                    event.preventDefault();
+                }, false
+            );
+        }
     }
 
     render()
@@ -71,6 +74,10 @@ class Overview extends React.Component
                     </div>
                 </div>
             );
+        }
+        else
+        {
+            return null;
         }
     }
 }
