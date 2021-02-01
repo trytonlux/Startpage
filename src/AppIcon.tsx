@@ -1,13 +1,17 @@
 import React from "react";
 import SVGIcon from "./SVGIcon";
 
-class AppIcon extends React.Component
+interface AppIconProps
 {
-    constructor(props)
-    {
-        super(props);
-    }
+    bg: string,
+    link: string,
+    icon: string,
+    label: string,
+    onClick: (event: React.MouseEvent) => void,
+}
 
+class AppIcon extends React.Component<AppIconProps, {}>
+{
     render()
     {
         const style = {
