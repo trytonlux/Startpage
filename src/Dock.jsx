@@ -3,18 +3,21 @@ import AppIcon from "./AppIcon";
 
 class Dock extends React.Component
 {
+    constructor(props)
+    {
+        super(props);
+    }
+
     render()
     {
         return(
-          <div className="dock">
+        <div className="dock">
+            <AppIcon icon="github" bg="#161b22" link="https://github.com" />
+            <AppIcon icon="email" bg="#505061" />
+            <AppIcon icon="steam" bg="#2c2e35" />
 
-              <AppIcon icon="github" bg="#161b22" link="https://github.com" />
-              <AppIcon icon="email" bg="#505061" />
-              <AppIcon icon="steam" bg="#2c2e35" />
-
-              <AppIcon icon="launcher" />
-
-          </div>
+            <AppIcon icon="launcher" onClick={this.props.toggle_overview} />
+        </div>
         );
     }
 }
