@@ -6,6 +6,7 @@ class Overview extends React.Component
     constructor(props)
     {
         super(props);
+        this.state = { show: false };
 
         this.overview_ref = React.createRef();
     }
@@ -21,53 +22,56 @@ class Overview extends React.Component
 
     render()
     {
-        return(
-            <div className="overview">
-                <div ref={this.overview_ref} className="overview-inner">
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+        if (this.state.show)
+        {
+            return(
+                <div className="overview">
+                    <div ref={this.overview_ref} className="overview-inner">
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
 
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
 
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
 
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
 
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
 
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
-                    <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                        <AppIcon icon="github" label="GitHub" bg="#161b22" />
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
     }
 }
 
