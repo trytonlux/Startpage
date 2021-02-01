@@ -3,11 +3,11 @@ import SVGIcon from "./SVGIcon";
 
 interface AppIconProps
 {
-    bg: string,
-    link: string,
+    bg?: string,
+    link?: string,
     icon: string,
-    label: string,
-    onClick: (event: React.MouseEvent) => void,
+    label?: string,
+    onClick?: (event: React.MouseEvent) => void,
 }
 
 class AppIcon extends React.Component<AppIconProps, {}>
