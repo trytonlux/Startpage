@@ -15,7 +15,7 @@ class AppIcon extends React.Component
         }
 
         return(
-            <a className="app-icon" href={this.props.link}>
+            <a className="app-icon" href={this.props.link} onClick={this.props.onClick}>
                 <div className="app-icon-inner" style={style}>
                     <SVGIcon name={this.props.icon} />
                 </div>
