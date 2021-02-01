@@ -9,6 +9,13 @@ class Overview extends React.Component
         this.state = { show: false };
 
         this.overview = React.createRef();
+
+        this.toggle_show = this.toggle_show.bind(this);
+    }
+
+    toggle_show()
+    {
+        this.setState({ show: true });
     }
 
     componentDidMount()
