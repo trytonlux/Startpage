@@ -13,6 +13,13 @@ class Desktop extends React.Component<{}, DesktopState>
         show_overview: false
     }
 
+    toggle_overview = () =>
+    {
+        this.setState({
+            show_overview: !this.state.show_overview
+        });
+    }
+
     render()
     {
         return(
@@ -21,7 +28,7 @@ class Desktop extends React.Component<{}, DesktopState>
                 <Overview />
             }
 
-            <Dock onOverviewLauncherClicked={() => console.log("Clicked launcher")} />
+            <Dock onOverviewLauncherClicked={this.toggle_overview} />
             </>
         );
     }
