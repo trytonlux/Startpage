@@ -95,6 +95,32 @@ html
     }
 }
 
+.overview-enter
+{
+    opacity: 0;
+}
+
+.overview-exit
+{
+   opacity: 1;
+}
+
+.overview-enter-active
+{
+   opacity: 1;
+}
+
+.overview-exit-active
+{
+   opacity: 0;
+}
+
+.overview-enter-active,
+.overview-exit-active
+{
+   transition: opacity 250ms;
+}
+
 .dock
 {
     grid-row-start: 2;

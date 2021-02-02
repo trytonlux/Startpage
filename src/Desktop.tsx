@@ -1,4 +1,5 @@
 import React from "react";
+import { CSSTransition } from "react-transition-group";
 import Overview from "./Overview";
 import Dock from "./Dock";
 
@@ -24,9 +25,9 @@ class Desktop extends React.Component<{}, DesktopState>
     {
         return(
             <>
-            {this.state.show_overview &&
+            <CSSTransition in={this.state.show_overview} timeout={250} classNames="overview" unmountOnExit>
                 <Overview />
-            }
+            </CSSTransition>
 
             <Dock onOverviewLauncherClicked={this.toggle_overview} />
             </>
