@@ -17,7 +17,10 @@ class Desktop extends React.Component<{}, DesktopState>
     {
         return(
             <>
-            <Overview />
+            {this.state.show_overview &&
+                <Overview />
+            }
+
             <Dock onOverviewLauncherClicked={() => console.log("Clicked launcher")} />
             </>
         );
