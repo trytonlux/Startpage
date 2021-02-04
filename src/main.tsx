@@ -1,6 +1,5 @@
 import "bulma/bulma.sass";
 import "./main.scss";
-import config from "./config.json";
 
 import React from "react";
 import ReactDOM from "react-dom";
