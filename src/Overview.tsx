@@ -11,7 +11,7 @@ class Overview extends React.Component<{}, {}>
     {
         config.Apps.forEach((app) => {
             this.apps.push(
-                <AppIcon label={app.label} icon={app.icon} link={app.url} bg={app.color} />
+                <AppIcon key={app.label} label={app.label} icon={app.icon} link={app.url} bg={app.color} />
             );
         });
     }
