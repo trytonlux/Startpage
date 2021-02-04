@@ -25,7 +25,8 @@
                     },
                     "color": {
                         "description": "The AppIcons backgrond colour.",
-                        "type": "string"
+                        "type": "string",
+                        "pattern": "^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
                     }
                 },
                 "required": ["label", "icon", "url"]
