@@ -3,14 +3,21 @@ import config from "./config.json";
 import React from "react";
 import AppIcon from "./AppIcon";
 
-class Overview extends React.Component<{}, {}>
+interface OverviewState
 {
-    apps: JSX.Element[] = [];
+    apps: JSX.Element[]
+}
+
+class Overview extends React.Component<{}, OverviewState>
+{
+    state: OverviewState = {
+        apps: []
+    }
 
     componentDidMount()
     {
         config.Apps.forEach((app) => {
-            this.apps.push(
+            this.state.apps.push(
                 <AppIcon key={app.label} label={app.label} icon={app.icon} link={app.url} bg={app.color} />
             );
         });
@@ -21,7 +28,7 @@ class Overview extends React.Component<{}, {}>
         return(
             <div className="overview">
                 <div className="overview-inner">
-                    {this.apps}
+                    {this.state.apps}
                 </div>
             </div>
         );
