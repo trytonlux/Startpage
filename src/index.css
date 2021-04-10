@@ -3,7 +3,7 @@
 :root
 {
     --colour-background: #171717;
-    --colour-background-lighter: #353535;
+    --colour-grey: #2a3840;
     --colour-text: #ffffff;
     --colour-red: #f34b7d;
     --colour-green: #70c989;
@@ -27,6 +27,19 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+section.item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--colour-grey);
+
+    width: 80%;
+    margin: 0 auto;
+    min-height: 128px;
 }
 
 .title
