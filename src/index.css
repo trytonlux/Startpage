@@ -40,6 +40,8 @@ section.item
     width: 80%;
     margin: 0 auto;
     min-height: 128px;
+
+    margin-bottom: 32px;
 }
 
 .title
