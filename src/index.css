@@ -39,3 +39,13 @@ header
     display: inline-block;
     transform: rotate(180deg);
 }
+
+.text-red
+{
+    color: var(--colour-red)
+}
+
+.text-green
+{
+    color: var(--colour-green)
+}
