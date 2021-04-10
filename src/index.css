@@ -1,5 +1,13 @@
+:root
+{
+    --colour-background: #171717;
+    --colour-text: #ffffff;
+    --colour-red: #f34b7d;
+    --colour-green: #70c989;
+}
+
 html
 {
-    background-color: #282a36;
-    color: #f8f8f2;
+    background-color: var(--colour-background);
+    color: var(--colour-text);
 }
