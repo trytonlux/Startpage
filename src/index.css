@@ -57,8 +57,9 @@ main
 .item
 {
     background-color: var(--colour-grey);
-    border-left-width: 8px;
-    border-left-style: solid;
+    background-position: 0 5%;
+    transition: background-position 0.5s;
+    background-size: 100% 200%;
 }
 
 .item a
@@ -74,20 +75,15 @@ main
 
 .item:nth-child(odd)
 {
-    border-left-color: var(--colour-red);
+    background-image: linear-gradient(to top, var(--colour-red) 50%, var(--colour-grey) 50%);
 }
 
 .item:nth-child(even)
 {
-    border-left-color: var(--colour-green);
+    background-image: linear-gradient(to top, var(--colour-green) 50%, var(--colour-grey) 50%);
 }
 
-.item:nth-child(odd) a:hover
+.item:hover
 {
-    background-color: var(--colour-red);
-}
-
-.item:nth-child(even) a:hover
-{
-    background-color: var(--colour-green);
+    background-position: 0 100%;
 }
