@@ -57,7 +57,7 @@ main
 .item
 {
     background-color: var(--colour-grey);
-    border-left-width: 5px;
+    border-left-width: 8px;
     border-left-style: solid;
 }
 
