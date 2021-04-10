@@ -1,6 +1,6 @@
 {
     "name": "trytonvanmeer-startpage",
-    "version": "fish",
+    "version": "fantasy",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
