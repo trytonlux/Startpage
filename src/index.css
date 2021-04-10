@@ -61,6 +61,6 @@ main
 
 .item a
 {
-    color: var(--colour-text);
+    color: inherit;
     text-decoration: none;
 }
