@@ -14,8 +14,6 @@ html
     background-color: var(--colour-background);
     color: var(--colour-text);
     font-family: "Roboto", sans-serif;
-    width: 80%;
-    margin: 0 auto;
 }
 
 header
