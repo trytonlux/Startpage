@@ -81,3 +81,13 @@ main
 {
     border-left-color: var(--colour-green);
 }
+
+.item:nth-child(odd) a:hover
+{
+    background-color: var(--colour-red);
+}
+
+.item:nth-child(even) a:hover
+{
+    background-color: var(--colour-green);
+}
