@@ -61,6 +61,11 @@ main
 
 .item a
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 256px;
     color: inherit;
     text-decoration: none;
 }
