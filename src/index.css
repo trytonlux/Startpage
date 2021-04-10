@@ -45,3 +45,11 @@ header
 {
     color: var(--colour-green)
 }
+
+main
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
