@@ -53,3 +53,14 @@ main
     flex-wrap: wrap;
     gap: 32px;
 }
+
+.item
+{
+
+}
+
+.item a
+{
+    color: var(--colour-text);
+    text-decoration: none;
+}
