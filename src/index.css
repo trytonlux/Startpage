@@ -81,14 +81,19 @@ main
     font-size: 1.5em;
 }
 
-.item:nth-child(odd)
+.item:nth-child(1n)
 {
     background-image: linear-gradient(to top, var(--colour-red) 50%, var(--colour-grey) 50%);
 }
 
-.item:nth-child(even)
+.item:nth-child(2n)
 {
     background-image: linear-gradient(to top, var(--colour-green) 50%, var(--colour-grey) 50%);
+}
+
+.item.item:nth-child(3n)
+{
+    background-image: linear-gradient(to top, var(--colour-blue) 50%, var(--colour-grey) 50%);
 }
 
 .item:hover
