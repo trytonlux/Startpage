@@ -2,7 +2,7 @@ MARKUP_FILES=$(wildcard *.mustache)
 STYLE_FILES=$(wildcard src/*.css)
 
 .DEFAULT_TARGET: all
-.PHONY: serve clean
+.PHONY: watch serve clean
 
 all: build config markup styles
 
@@ -21,6 +21,9 @@ build/index.html: $(MARKUP_FILES)
 styles: build/index.css
 build/index.css: $(STYLE_FILES)
 	sassc $< $@
+
+watch:
+	while true; do make $(WATCHMAKE); inotifywait -qre close_write .; done
 
 serve:
 	cd build && npx live-server --no-browser --no-css-inject
