@@ -20,3 +20,7 @@ build/index.html: $(MARKUP_FILES)
 styles: build/index.css
 build/index.css: $(STYLE_FILES)
 	sassc $< $@
+
+.PHONY: clean
+clean:
+	rm -rf ./build
