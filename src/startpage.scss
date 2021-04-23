@@ -13,7 +13,7 @@ $colours: (
 {
     @each $name, $hex in $colours
     {
-        text-#{$name}
+        .text-#{$name}
         {
             color: $hex;
         }
