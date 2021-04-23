@@ -6,3 +6,18 @@ $colour-text: #ffffff;
 $colour-red: #f34b7d;
 $colour-green: #70c989;
 $colour-blue: #3581ba;
+
+html
+{
+    background-color: $colour-background;
+    color: $colour-text;
+    font-family: "Roboto", sans-serif;
+}
+
+header
+{
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
