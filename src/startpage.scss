@@ -9,10 +9,15 @@ $colours: (
     blue: #3581ba
 );
 
+@function get-colour($colour)
+{
+    @return map-get($colours, $colour);
+}
+
 html
 {
-    background-color: map-get($colours, "background");
-    color: map-get($colours, "text");
+    background-color: get-colour("background");
+    color: get-colour("text");
     font-family: "Roboto", sans-serif;
 }
 
