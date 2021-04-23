@@ -26,7 +26,7 @@ watch:
 	while true; do make $(WATCHMAKE) 1>/dev/null; inotifywait -qre close_write ./src config.yaml; done
 
 serve:
-	cd build && npx live-server --no-browser --no-css-inject
+	cd build && npx live-server --no-browser --no-css-inject --wait=500
 
 clean:
 	rm -rf ./build
