@@ -2,6 +2,7 @@ MARKUP_FILES=$(wildcard *.j2)
 STYLE_FILES=$(wildcard src/*.css)
 
 .DEFAULT_TARGET: all
+.PHONY: serve clean
 
 all: build config markup styles
 
@@ -21,6 +22,8 @@ styles: build/index.css
 build/index.css: $(STYLE_FILES)
 	sassc $< $@
 
-.PHONY: clean
+serve:
+	cd build && npx live-server --no-browser --no-css-inject
+
 clean:
 	rm -rf ./build
