@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-$colour-background: #171717;
-$colour-grey: #2a3840;
-$colour-text: #ffffff;
-$colour-red: #f34b7d;
-$colour-green: #70c989;
-$colour-blue: #3581ba;
+$colours: (
+    background: #171717,
+    grey: #2a3840,
+    text: #ffffff,
+    red: #f34b7d,
+    green: #70c989,
+    blue: #3581ba
+);
 
 html
 {
-    background-color: $colour-background;
-    color: $colour-text;
+    background-color: map-get($colours, "background");
+    color: map-get($colours, "text");
     font-family: "Roboto", sans-serif;
 }
 
