@@ -1,5 +1,5 @@
 MARKUP_FILES=$(wildcard src/*.mustache)
-STYLE_FILES=$(wildcard src/*.sass)
+STYLE_FILES=$(wildcard src/*.scss)
 
 .DEFAULT_TARGET: all
 .PHONY: watch serve clean
