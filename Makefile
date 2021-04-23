@@ -1,4 +1,4 @@
-MARKUP_FILES=$(wildcard *.mustache)
+MARKUP_FILES=$(wildcard src/*.mustache)
 STYLE_FILES=$(wildcard src/*.css)
 
 .DEFAULT_TARGET: all
