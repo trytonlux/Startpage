@@ -4,15 +4,13 @@ MARKUP_FILES=$(wildcard *.j2)
 
 all: build config markup
 
-
 build:
 	mkdir -p $@
 	touch $@
 
-
-config:
+config: config.yaml
+config.yaml:
 	test -f config.yaml || cp config.template.yaml config.yaml
-
 
 markup: build/index.html
 build/index.html: $(MARKUP_FILES)
