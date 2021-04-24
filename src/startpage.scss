@@ -9,17 +9,6 @@ $colours: (
     blue: #3581ba
 );
 
-@mixin text-colour
-{
-    @each $name, $hex in $colours
-    {
-        .text-#{$name}
-        {
-            color: $hex;
-        }
-    }
-} @include text-colour();
-
 @function get-colour($colour)
 {
     @return map-get($colours, $colour);
