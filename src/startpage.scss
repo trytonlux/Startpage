@@ -47,27 +47,21 @@ main
     transition: background-position 0.5s;
     background-size: 100% 200%;
 
-    background-image: linear-gradient(to top, $red 50%, $grey-light 50%);
+    @mixin accent($colour)
+    {
+        background-image: linear-gradient(to top, $colour 50%, $grey-light 50%);
+    }
 
-    // @mixin gradient($colour)
-    // {
-    //     background-image: linear-gradient(to top, map-get($colours, $colour) 50%, map-get($colours, grey) 50%);
-    // }
-
-    // &:nth-child(1n)
-    // {
-    //     @include gradient($colour-red);
-    // }
-
-    // &:nth-child(2n)
-    // {
-    //     @include gradient(green);
-    // }
-
-    // &:nth-child(3n)
-    // {
-    //     @include gradient(blue);
-    // }
+    @mixin nth-child-accents($colours)
+    {
+        @for $i from 1 through length($colours)
+        {
+            &:nth-child(#{$i}n)
+            {
+                @include accent(nth($colours, $i));
+            }
+        }
+    } @include nth-child-accents($red);
 
     &:hover
     {
