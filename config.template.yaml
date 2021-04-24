@@ -1,6 +1,8 @@
 ---
 links:
-  Website:
+  - name: Website
     url: "#"
-  Another Website:
+  - name: Another Website
+    url: "#"
+  - name: Yet Another Website
     url: "#"
