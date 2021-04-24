@@ -8,6 +8,8 @@ $blue: #2196F3;
 $green: #4CAF50;
 $orange: #FF9800;
 
+$accents: ($red $blue $green $orange);
+
 html
 {
     background-color: $grey-dark;
@@ -55,16 +57,13 @@ main
         background-image: linear-gradient(to top, $colour 50%, $grey-light 50%);
     }
 
-    @mixin nth-child-accents($colours)
+    @for $i from 1 through length($accents)
     {
-        @for $i from 1 through length($colours)
+        &:nth-child(#{$i}n)
         {
-            &:nth-child(#{$i}n)
-            {
-                @include accent(nth($colours, $i));
-            }
+            @include accent(nth($accents, $i));
         }
-    } @include nth-child-accents($red $blue $green $orange);
+    }
 
     &:hover
     {
