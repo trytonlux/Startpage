@@ -9,10 +9,13 @@ $colours: (
     blue: #3581ba
 );
 
+$colour-background: #212121;
+$colour-text: #FAFAFA;
+
 html
 {
-    background-color: get-colour(background);
-    color: get-colour(text);
+    background-color: $colour-background;
+    color: $colour-text;
     font-family: "Roboto", sans-serif;
 }
 
