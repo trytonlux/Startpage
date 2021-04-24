@@ -4,6 +4,9 @@ $grey-dark: #212121;
 $grey-light: #263238;
 $white: #FAFAFA;
 $red: #f44336;
+$blue: #2196F3;
+$green: #4CAF50;
+$orange: #FF9800;
 
 html
 {
@@ -61,7 +64,7 @@ main
                 @include accent(nth($colours, $i));
             }
         }
-    } @include nth-child-accents($red);
+    } @include nth-child-accents($red $blue $green $orange);
 
     &:hover
     {
