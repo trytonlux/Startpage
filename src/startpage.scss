@@ -9,11 +9,6 @@ $colours: (
     blue: #3581ba
 );
 
-@function get-colour($colour)
-{
-    @return map-get($colours, $colour);
-}
-
 html
 {
     background-color: get-colour(background);
