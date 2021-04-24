@@ -1,21 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-$colours: (
-    background: #171717,
-    grey: #2a3840,
-    text: #ffffff,
-    red: #f34b7d,
-    green: #70c989,
-    blue: #3581ba
-);
-
-$colour-background: #212121;
-$colour-text: #FAFAFA;
+$grey-dark: #212121;
+$grey-light: #263238;
+$white: #FAFAFA;
+$red: #f44336;
 
 html
 {
-    background-color: $colour-background;
-    color: $colour-text;
+    background-color: $grey-dark;
+    color: $white;
     font-family: "Roboto", sans-serif;
 }
 
@@ -49,30 +42,32 @@ main
 
 .item
 {
-    background-color: get-colour(grey);
+    background-color: $grey-light;
     background-position: 0% 5%;
     transition: background-position 0.5s;
     background-size: 100% 200%;
 
-    @mixin gradient($colour)
-    {
-        background-image: linear-gradient(to top, map-get($colours, $colour) 50%, map-get($colours, grey) 50%);
-    }
+    background-image: linear-gradient(to top, $red 50%, $grey-light 50%);
 
-    &:nth-child(1n)
-    {
-        @include gradient(red);
-    }
+    // @mixin gradient($colour)
+    // {
+    //     background-image: linear-gradient(to top, map-get($colours, $colour) 50%, map-get($colours, grey) 50%);
+    // }
 
-    &:nth-child(2n)
-    {
-        @include gradient(green);
-    }
+    // &:nth-child(1n)
+    // {
+    //     @include gradient($colour-red);
+    // }
 
-    &:nth-child(3n)
-    {
-        @include gradient(blue);
-    }
+    // &:nth-child(2n)
+    // {
+    //     @include gradient(green);
+    // }
+
+    // &:nth-child(3n)
+    // {
+    //     @include gradient(blue);
+    // }
 
     &:hover
     {
