@@ -15,29 +15,11 @@
 
     <main>
 
-    <div class="item">
-      <a href="#">Some Website</a>
-    </div>
-
-    <div class="item">
-      <a href="#">Some Website</a>
-    </div>
-
-    <div class="item">
-      <a href="#">Some Website</a>
-    </div>
-
-    <div class="item">
-      <a href="#">Some Website</a>
-    </div>
-
-    <div class="item">
-      <a href="#">Some Website</a>
-    </div>
-
-    <div class="item">
-      <a href="#">Some Website</a>
-    </div>
+      {{#links}}
+        <div class="item">
+          <a href="{{ url }}">{{ name }}</a>
+        </div>
+      {{/links}}
 
     </main>
   </body>
