@@ -8,12 +8,16 @@
   </head>
   <body>
     <header>
-      <h1 class="title">
+      <h1>
        Startpage
       </h1>
     </header>
 
     <main>
+
+    {{ range . }}
+      {{ . }} <br>
+    {{ end }}
 
     </main>
   </body>

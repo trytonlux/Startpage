@@ -4,6 +4,7 @@ import (
 	_ "embed"
 	"fmt"
 	"net/http"
+	"text/template"
 )
 
 //go:embed "data/index.html.tmpl"
@@ -13,7 +14,19 @@ var indexHTMLTemplate string
 var indexCSS string
 
 func index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, indexHTMLTemplate)
+	test := []string{"This", "That", "What"}
+
+	template, err := template.New("index").Parse(indexHTMLTemplate)
+
+	if err != nil {
+		panic(err)
+	}
+
+	err = template.Execute(w, test)
+
+	if err != nil {
+		panic(err)
+	}
 }
 
 func resourceCSS(w http.ResponseWriter, r *http.Request) {
