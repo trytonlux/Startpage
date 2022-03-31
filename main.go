@@ -7,6 +7,11 @@ import (
 	"text/template"
 )
 
+type Link struct {
+	Title string
+	URL   string
+}
+
 //go:embed "data/index.html.tmpl"
 var indexHTMLTemplate string
 
@@ -14,7 +19,11 @@ var indexHTMLTemplate string
 var indexCSS string
 
 func index(w http.ResponseWriter, r *http.Request) {
-	test := []string{"This", "That", "What"}
+	test := []Link{
+		{"GitHub", "github.com"},
+		{"Reddit", "reddit.com"},
+		{"Steam", "store.steampowered.com"},
+	}
 
 	template, err := template.New("index").Parse(indexHTMLTemplate)
 
