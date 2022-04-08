@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	_ "embed"
 	"net/http"
 	"text/template"
@@ -11,11 +12,8 @@ type Link struct {
 	URL   string
 }
 
-//go:embed "data/index.html.tmpl"
-var indexHTMLTemplate string
-
-//go:embed "data/index.css"
-var css []byte
+//go:embed "assets/*"
+var assets embed.FS
 
 func index(w http.ResponseWriter, r *http.Request) {
 	test := []Link{
@@ -24,7 +22,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Steam", "store.steampowered.com"},
 	}
 
-	template, err := template.New("index").Parse(indexHTMLTemplate)
+	template, err := template.ParseFS(assets, "assets/index.html.tmpl")
 
 	if err != nil {
 		panic(err)
@@ -39,6 +37,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func resourceCSS(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/css")
+	css, _ := assets.ReadFile("assets/index.css")
 	w.Write(css)
 }
 
