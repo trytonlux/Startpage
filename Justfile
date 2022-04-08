@@ -3,3 +3,6 @@
 
 @run:
   go run main.go
+
+@watch:
+  reflex -s just run
