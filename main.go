@@ -12,19 +12,20 @@ type Link struct {
 	URL   string
 }
 
-//go:embed "assets/*"
+// go:embed "assets/*"
 var assets embed.FS
 
-func render(w http.ResponseWriter, name string, data any) (err error) {
+func render(w http.ResponseWriter, name string, data any) {
 	template_name := fmt.Sprintf("assets/%s.html.tmpl", name)
-
 	template, err := template.ParseFS(assets, template_name)
 
 	if err != nil {
-		panic(err)
+		w.WriteHeader(http.StatusInternalServerError)
+		fmt.Fprint(w, err)
+		return
 	}
 
-	return template.Execute(w, data)
+	template.Execute(w, data)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
@@ -34,11 +35,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Steam", "store.steampowered.com"},
 	}
 
-	err := render(w, "index", test)
-
-	if err != nil {
-		panic(err)
-	}
+	render(w, "index", test)
 }
 
 func resourceCSS(w http.ResponseWriter, r *http.Request) {
