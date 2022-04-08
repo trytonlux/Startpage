@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "embed"
-	"fmt"
 	"net/http"
 	"text/template"
 )
@@ -16,7 +15,7 @@ type Link struct {
 var indexHTMLTemplate string
 
 //go:embed "data/index.css"
-var indexCSS string
+var css []byte
 
 func index(w http.ResponseWriter, r *http.Request) {
 	test := []Link{
@@ -40,7 +39,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func resourceCSS(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/css")
-	fmt.Fprint(w, indexCSS)
+	w.Write(css)
 }
 
 func main() {
