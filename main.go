@@ -12,7 +12,7 @@ type Link struct {
 	URL   string
 }
 
-// go:embed "assets/*"
+//go:embed "assets/*"
 var assets embed.FS
 
 func render(w http.ResponseWriter, name string, data any) {
@@ -28,6 +28,12 @@ func render(w http.ResponseWriter, name string, data any) {
 	template.Execute(w, data)
 }
 
+func css(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/css")
+	css, _ := assets.ReadFile("assets/index.css")
+	w.Write(css)
+}
+
 func index(w http.ResponseWriter, r *http.Request) {
 	test := []Link{
 		{"GitHub", "github.com"},
@@ -38,15 +44,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 	render(w, "index", test)
 }
 
-func resourceCSS(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/css")
-	css, _ := assets.ReadFile("assets/index.css")
-	w.Write(css)
-}
-
 func main() {
 	http.HandleFunc("/", index)
-	http.HandleFunc("/index.css", resourceCSS)
+	http.HandleFunc("/index.css", css)
 
 	http.ListenAndServe(":8080", nil)
 }
