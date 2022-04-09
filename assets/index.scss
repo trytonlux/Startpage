@@ -1,7 +1,19 @@
-$background: #333333;
+$black: #272822;
+$red: #f92672;
+$green: #a6e22e;
+$orange: #f4bf75;
+$blue: #66d9ef;
+$purple: #ae81ff;
+$turquoise: #a1efe4;
+
+$background: #1c1c1c;
 $text: #eeeeee;
 
 body {
     background-color: $background;
     color: $text;
+}
+
+main {
+    margin: 2em 2em;
 }
