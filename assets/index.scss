@@ -10,6 +10,8 @@ $background: #1c1c1c;
 $text: #eeeeee;
 
 body {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 2em;
     background-color: $background;
     color: $text;
 }
