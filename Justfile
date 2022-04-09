@@ -5,4 +5,4 @@
   go run main.go
 
 @watch:
-  reflex -r '\.(go|css|tmpl)$' -s just run
+  reflex -r '\.(go|css|tmpl|scss)$' -s just run
