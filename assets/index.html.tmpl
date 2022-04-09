@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <header>
-      <h1>
-       Startpage
-      </h1>
-    </header>
-
     <main>
 
-    {{ range . }}
-      {{ .Title }} {{ .URL }} <br>
-    {{ end }}
+    <div class="prompt-path">~</div>
+    <div class="prompt-command">$ ./Startpage</div>
+
+    <div class="links">
+      {{ range . }}
+        <a class="link" href="https://{{ .URL }}">{{ .Title }}</a>
+      {{ end }}
+    </div>
 
     </main>
   </body>
