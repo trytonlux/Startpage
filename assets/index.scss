@@ -26,8 +26,13 @@ main {
 }
 
 .prompt-command {
+    color: $red;
+
     &::first-letter {
-        color: $red;
         font-weight: bold;
     }
+}
+
+.prompt-command-args {
+    color: $green;
 }
