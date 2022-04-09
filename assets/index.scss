@@ -17,3 +17,15 @@ body {
 main {
     margin: 2em 2em;
 }
+
+.prompt-path {
+    color: $purple;
+    font-weight: bold;
+}
+
+.prompt-command {
+    &::first-letter {
+        color: $red;
+        font-weight: bold;
+    }
+}
