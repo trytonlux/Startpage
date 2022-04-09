@@ -28,7 +28,7 @@ func render(w http.ResponseWriter, name string, data any) {
 	template.Execute(w, data)
 }
 
-func css(w http.ResponseWriter, r *http.Request) {
+func serveCSS(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/css")
 	css, _ := assets.ReadFile("assets/index.css")
 	w.Write(css)
@@ -46,7 +46,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", index)
-	http.HandleFunc("/index.css", css)
+	http.HandleFunc("/index.css", serveCSS)
 
 	http.ListenAndServe(":8080", nil)
 }
