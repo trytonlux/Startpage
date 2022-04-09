@@ -14,9 +14,9 @@
       ϝ startpage <span class="prompt-command-args">list</span>
     </div>
 
-    <div class="links">
+    <div>
       {{ range . }}
-        <a class="link" href="https://{{ .URL }}">{{ .Title }}</a>
+        <a href="https://{{ .URL }}">{{ .Title }}</a>
       {{ end }}
     </div>
 
