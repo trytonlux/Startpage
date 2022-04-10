@@ -26,10 +26,7 @@ var config Config = loadConfig()
 var css []byte = generateCSS()
 
 func loadConfig() (config Config) {
-	var yamlBytes []byte
-	var err error
-
-	yamlBytes, err = assets.ReadFile("assets/config.yaml")
+	yamlBytes, err := assets.ReadFile("assets/config.yaml")
 	if err != nil {
 		yamlBytes, err = assets.ReadFile("assets/config.example.yaml")
 		if err != nil {
