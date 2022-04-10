@@ -7,20 +7,46 @@ import (
 	"text/template"
 
 	"github.com/bep/golibsass/libsass"
+	"gopkg.in/yaml.v3"
 )
 
 type Link struct {
-	Title string
-	URL   string
+	Title string `yaml:"name"`
+	URL   string `yaml:"url"`
+}
+
+type Config struct {
+	Links []Link `yaml:"links,flow"`
 }
 
 //go:embed "assets/*"
 var assets embed.FS
+
+var config Config = loadConfig()
 var css []byte = generateCSS()
+
+func loadConfig() (config Config) {
+	var yamlBytes []byte
+	var err error
+
+	yamlBytes, err = assets.ReadFile("assets/config.yaml")
+	if err != nil {
+		yamlBytes, err = assets.ReadFile("assets/config.example.yaml")
+		if err != nil {
+			panic(err)
+		}
+	}
+
+	err = yaml.Unmarshal(yamlBytes, &config)
+	if err != nil {
+		panic(err)
+	}
+
+	return
+}
 
 func generateCSS() []byte {
 	source, err := assets.ReadFile("assets/index.scss")
-
 	if err != nil {
 		panic(err)
 	}
@@ -30,7 +56,6 @@ func generateCSS() []byte {
 	})
 
 	result, err := transpiler.Execute(string(source))
-
 	if err != nil {
 		panic(err)
 	}
@@ -57,13 +82,7 @@ func render(w http.ResponseWriter, name string, data any) {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	test := []Link{
-		{"GitHub", "github.com"},
-		{"Reddit", "reddit.com"},
-		{"Steam", "store.steampowered.com"},
-	}
-
-	render(w, "index", test)
+	render(w, "index", config.Links)
 }
 
 func main() {
