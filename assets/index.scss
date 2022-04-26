@@ -45,3 +45,8 @@ a {
 .prompt-command-args {
     color: $green;
 }
+
+.prompt-url-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
