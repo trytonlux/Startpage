@@ -3,9 +3,7 @@ use sycamore::prelude::*;
 #[component(inline_props)]
 fn Link<G: Html>(cx: Scope, name: String, url: String) -> View<G> {
     view! {cx,
-        div(class="link") {
-            a(href=(url)) {(name)}
-        }
+        a(class="link", href=(url)) {(name)}
     }
 }
 
