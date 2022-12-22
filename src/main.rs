@@ -12,7 +12,7 @@ fn random_color() -> String {
 }
 
 #[component(inline_props)]
-fn Link<G: Html>(cx: Scope, name: String, url: String) -> View<G> {
+fn Link<G: Html>(cx: Scope, name: &'static str, url: &'static str) -> View<G> {
     view! {cx,
         a(class=(format!("link {}", random_color())), href=(url)) {(name)}
     }
@@ -21,7 +21,7 @@ fn Link<G: Html>(cx: Scope, name: String, url: String) -> View<G> {
 fn main() {
     sycamore::render(|cx| {
         view! { cx,
-            Link(name="Steam".to_string(), url="https://store.steampowered.com".to_string())
+            Link(name="Steam", url="https://store.steampowered.com")
         }
     });
 }
