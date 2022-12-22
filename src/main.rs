@@ -21,7 +21,9 @@ fn Link<G: Html>(cx: Scope, name: &'static str, url: &'static str) -> View<G> {
 fn main() {
     sycamore::render(|cx| {
         view! { cx,
-            Link(name="Steam", url="https://store.steampowered.com")
+            main() {
+                Link(name="Steam", url="https://store.steampowered.com")
+            }
         }
     });
 }
