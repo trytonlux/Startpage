@@ -18,9 +18,19 @@ fn Link<G: Html>(cx: Scope, name: &'static str, url: &'static str) -> View<G> {
     }
 }
 
+#[component()]
+fn Header<G: Html>(cx: Scope) -> View<G> {
+    view! {cx,
+        header(){
+            h1(){("STARTPAGE")}
+        }
+    }
+}
+
 fn main() {
     sycamore::render(|cx| {
         view! { cx,
+            Header()
             main() {
                 Link(name="Steam", url="https://store.steampowered.com")
             }

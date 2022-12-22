@@ -26,7 +26,8 @@ $base: #24273a;
 $mantle: #1e2030;
 $crust: #181926;
 
-$colors: ("rosewater": #f4dbd6,
+$colors: (
+    "rosewater": #f4dbd6,
     "flamingo": #f0c6c6,
     "pink": #f5bde6,
     "mauve": #c6a0f6,
@@ -42,17 +43,24 @@ $colors: ("rosewater": #f4dbd6,
     "lavender": #b7bdf8,
 );
 
-@each $name, $hex in $colors {
+@each $name,
+$hex in $colors {
     .#{$name} {
         background-color: #{$hex};
     }
 }
 
 body {
-    margin-top: 100px;
+    width: 95%;
+    margin: 0 auto;
     background-color: $crust;
     color: $text;
     font-family: "Noto Sans";
+}
+
+header {
+    height: 128px;
+    text-align: center;
 }
 
 .link {
