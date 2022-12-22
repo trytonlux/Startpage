@@ -1,6 +1,9 @@
 use rand::prelude::*;
 use sycamore::prelude::*;
 
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+
 fn random_color() -> String {
     vec![
         "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky",
