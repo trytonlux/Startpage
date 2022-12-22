@@ -44,7 +44,7 @@ $colors: ("rosewater": #f4dbd6,
 
 @each $name, $hex in $colors {
     .#{$name} {
-        color: #{$hex};
+        background-color: #{$hex};
     }
 }
 
@@ -61,7 +61,6 @@ body {
     padding-right: 4em;
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: $overlay2;
     border-radius: .5em;
     color: $base;
     text-decoration: none;
