@@ -38,7 +38,6 @@ fn main() {
                 Link(name="Github", url="https://github.com")
                 Link(name="Email", url="https://mail.proton.me/inbox")
                 Link(name="Lemmy", url="https://sh.itjust.works")
-                Link(name="/r/linux_gaming", url="https://reddit.com/r/linux_gaming")
                 Link(name="Steam", url="https://store.steampowered.com")
                 Link(name="Titanium-Server", url="https://titanium-server.lan")
             }
