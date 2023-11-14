@@ -39,7 +39,7 @@ fn main() {
                 Link(name="Email", url="https://mail.proton.me/inbox")
                 Link(name="Lemmy", url="https://sh.itjust.works")
                 Link(name="Steam", url="https://store.steampowered.com")
-                Link(name="Titanium-Server", url="https://titanium-server.lan")
+                Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
             }
         }
     });
