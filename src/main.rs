@@ -38,9 +38,9 @@ fn main() {
                 Link(name="Github", url="https://github.com")
                 Link(name="Email", url="https://mail.proton.me/inbox")
                 Link(name="Steam", url="https://store.steampowered.com")
-                Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
                 Link(name="Jellyfin", url="https://jellyfin.titanium-server.thelux.family")
                 Link(name="RSS", url="https://rss.titanium-server.thelux.family")
+                Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
             }
         }
     });
