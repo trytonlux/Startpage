@@ -1,47 +1,21 @@
-use rand::prelude::*;
-use sycamore::prelude::*;
+use actix_web::{App, HttpResponse, HttpServer, Responder, get, web::Data};
+use tera::{Context, Tera};
 
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+#[get("/")]
+async fn index(tera: Data<Tera>) -> impl Responder {
+    let mut ctx = Context::new();
+    ctx.insert("name", "World");
 
-fn random_color() -> String {
-    vec![
-        "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky",
-        "sapphire", "blue", "lavender",
-    ]
-    .choose_multiple(&mut rand::thread_rng(), 1)
-    .cloned()
-    .collect()
+    let rendered = tera.render("index.html", &ctx).unwrap();
+    HttpResponse::Ok().body(rendered)
 }
 
-#[component(inline_props)]
-fn Link<G: Html>(cx: Scope, name: &'static str, url: &'static str) -> View<G> {
-    view! {cx,
-        a(class=(format!("link {}", random_color())), href=(url)) {(name)}
-    }
-}
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    let tera = Data::new(Tera::new("templates/*").unwrap());
 
-#[component()]
-fn Header<G: Html>(cx: Scope) -> View<G> {
-    view! {cx,
-        header(){
-            h1(){("STARTPAGE")}
-        }
-    }
-}
-
-fn main() {
-    sycamore::render(|cx| {
-        view! { cx,
-            Header()
-            main() {
-                Link(name="Github", url="https://github.com")
-                Link(name="Email", url="https://mail.proton.me/inbox")
-                Link(name="Steam", url="https://store.steampowered.com")
-                Link(name="RSS", url="https://rss.titanium-server.thelux.family")
-                Link(name="Jellyfin", url="https://jellyfin.titanium-server.thelux.family")
-                Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
-            }
-        }
-    });
+    HttpServer::new(move || App::new().app_data(tera.clone()).service(index))
+        .bind(("127.0.0.1", 7365))?
+        .run()
+        .await
 }

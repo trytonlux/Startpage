@@ -1,15 +1,14 @@
 [package]
 name = "startpage"
-version = "1.0.0"
-edition = "2021"
+version = "2.0.0"
+edition = "2024"
+authors = ["Tryton Lux <code@trytonlux.ca>"]
+license-file = "LICENSE"
 
 [dependencies]
-wee_alloc = "0.4"
-sycamore = "0.8"
-getrandom = { version = "0.2", features = ["js"] }
-rand = "0.8"
+actix-web = "4"
+tera = "1"
 
 [profile.release]
-panic = "abort"
-codegen-units = 1
+strip = true
 lto = true
