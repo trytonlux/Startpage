@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Startpage</title>
+  <link rel="stylesheet" href="/assets/index.css" />
 </head>
 
 <body>
-  Hello, {{name}}!
+  <h1>Startpage</h1>
+
+  <main>
+    {% block main %} index main {% endblock main %}
+  </main>
 </body>
 
 </html>
