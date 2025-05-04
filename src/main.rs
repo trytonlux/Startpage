@@ -2,10 +2,12 @@ use actix_files::Files;
 use actix_web::{App, HttpResponse, HttpServer, Responder, get, web::Data};
 use tera::{Context, Tera};
 
+mod widgets;
+
 #[get("/")]
 async fn index(tera: Data<Tera>) -> impl Responder {
     let mut ctx = Context::new();
-    ctx.insert("name", "World");
+    ctx.insert("links", &widgets::Links::new());
 
     let rendered = tera.render("index.html", &ctx).unwrap();
     HttpResponse::Ok().body(rendered)
@@ -13,7 +15,7 @@ async fn index(tera: Data<Tera>) -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    let tera = Data::new(Tera::new("templates/*").unwrap());
+    let tera = Data::new(Tera::new("templates/**/*").unwrap());
 
     HttpServer::new(move || {
         App::new()
