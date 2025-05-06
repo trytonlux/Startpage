@@ -1,2 +1,2 @@
 watch:
-    watchexec --watch src --watch templates -r cargo run
+    watchexec --watch src --watch templates --watch assets -r cargo run
