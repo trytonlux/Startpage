@@ -1,8 +1,10 @@
 use actix_files::{Files, NamedFile};
 use actix_web::{App, HttpResponse, HttpServer, Responder, get, middleware::Logger, web::Data};
+use config::Config;
 use env_logger::Env;
 use tera::{Context, Tera};
 
+mod config;
 mod widgets;
 
 #[get("/favicon.ico")]
@@ -12,8 +14,10 @@ async fn favicon() -> impl Responder {
 
 #[get("/")]
 async fn index(tera: Data<Tera>) -> impl Responder {
+    let config = Config::load();
+
     let mut ctx = Context::new();
-    ctx.insert("links", &widgets::Links::new());
+    ctx.insert("links", &widgets::links::render(config));
 
     let rendered = tera.render("index.html", &ctx).unwrap();
     HttpResponse::Ok().body(rendered)
@@ -23,12 +27,12 @@ async fn index(tera: Data<Tera>) -> impl Responder {
 async fn main() -> std::io::Result<()> {
     env_logger::init_from_env(Env::default().default_filter_or("info"));
 
-    let tera = Data::new(Tera::new("templates/**/*").unwrap());
+    HttpServer::new(|| {
+        let tera = Data::new(Tera::new("templates/**/*").unwrap());
 
-    HttpServer::new(move || {
         App::new()
             .wrap(Logger::default())
-            .app_data(tera.clone())
+            .app_data(tera)
             .service(favicon)
             .service(index)
             .service(Files::new("/assets", "./assets").show_files_listing())
