@@ -1,9 +1,14 @@
-use actix_files::Files;
+use actix_files::{Files, NamedFile};
 use actix_web::{App, HttpResponse, HttpServer, Responder, get, middleware::Logger, web::Data};
 use env_logger::Env;
 use tera::{Context, Tera};
 
 mod widgets;
+
+#[get("/favicon.ico")]
+async fn favicon() -> impl Responder {
+    NamedFile::open("./assets/favicon.ico")
+}
 
 #[get("/")]
 async fn index(tera: Data<Tera>) -> impl Responder {
@@ -24,6 +29,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(Logger::default())
             .app_data(tera.clone())
+            .service(favicon)
             .service(index)
             .service(Files::new("/assets", "./assets").show_files_listing())
     })
