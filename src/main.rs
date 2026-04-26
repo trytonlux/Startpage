@@ -15,33 +15,36 @@ fn random_color() -> String {
 }
 
 #[component(inline_props)]
-fn Link<G: Html>(cx: Scope, name: &'static str, url: &'static str) -> View<G> {
-    view! {cx,
-        a(class=(format!("link {}", random_color())), href=(url)) {(name)}
+fn Link(name: &'static str, url: &'static str) -> View {
+    view! {
+        a(class=format!("link {}", random_color()) , href=url ) {(name)}
     }
 }
 
 #[component()]
-fn Header<G: Html>(cx: Scope) -> View<G> {
-    view! {cx,
+fn Header() -> View {
+    view! {
         header(){
             h1(){("STARTPAGE")}
         }
     }
 }
 
-fn main() {
-    sycamore::render(|cx| {
-        view! { cx,
-            Header()
-            main() {
-                Link(name="Github", url="https://github.com")
-                Link(name="Email", url="https://mail.proton.me/inbox")
-                Link(name="Steam", url="https://store.steampowered.com")
-                Link(name="RSS", url="https://rss.titanium-server.thelux.family")
-                Link(name="Jellyfin", url="https://jellyfin.titanium-server.thelux.family")
-                Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
-            }
+#[component()]
+fn App() -> View {
+    view!(
+        Header()
+        main() {
+            Link(name="Github", url="https://github.com")
+            Link(name="Email", url="https://mail.proton.me/inbox")
+            Link(name="Steam", url="https://store.steampowered.com")
+            Link(name="RSS", url="https://rss.titanium-server.thelux.family")
+            Link(name="Jellyfin", url="https://jellyfin.titanium-server.thelux.family")
+            Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
         }
-    });
+    )
+}
+
+fn main() {
+    sycamore::render(App);
 }
