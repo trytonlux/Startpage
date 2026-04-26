@@ -9,7 +9,7 @@ fn random_color() -> String {
         "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky",
         "sapphire", "blue", "lavender",
     ]
-    .choose_multiple(&mut rand::thread_rng(), 1)
+    .sample(&mut rand::rng(), 1)
     .cloned()
     .collect()
 }

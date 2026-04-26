@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 wee_alloc = "0.4"
 sycamore = "0.9"
+getrandom = { version = "0.4", features = ["wasm_js"] }
 rand = "0.10"
 
 [profile.release]
