@@ -39,6 +39,8 @@ fn App() -> View {
             Link(name="Email", url="https://mail.proton.me/inbox")
             Link(name="Steam", url="https://store.steampowered.com")
             Link(name="RSS", url="https://rss.titanium-server.thelux.family")
+            Link(name="Notes", url="https://notes.titanium-server.thelux.family")
+            Link(name="Torrents", url="https://torrent.titanium-server.thelux.family")
             Link(name="Jellyfin", url="https://jellyfin.titanium-server.thelux.family")
             Link(name="Titanium-Server", url="https://titanium-server.thelux.family")
         }
