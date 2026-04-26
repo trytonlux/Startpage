@@ -5,9 +5,8 @@ edition = "2021"
 
 [dependencies]
 wee_alloc = "0.4"
-sycamore = "0.8"
-getrandom = { version = "0.2", features = ["js"] }
-rand = "0.9"
+sycamore = "0.9"
+rand = "0.10"
 
 [profile.release]
 panic = "abort"
